@@ -4,15 +4,20 @@ title: About
 permalink: /about/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](https://jekyllrb.com/)
+We are a band of rogue developers. Raised by wolves. Wild and unflappable.
 
-You can find the source code for Minima at GitHub:
-[jekyll][jekyll-organization] /
-[minima](https://github.com/jekyll/minima)
+We like to makes games sometimes, and non-games too. We started making games when Sam and Aaron discovered coding in college and it's been history ever since. We scooped up RJ along the way; throwing away his previous career for the glory that befalls all indie developers.
 
-You can find the source code for Jekyll at GitHub:
-[jekyll][jekyll-organization] /
-[jekyll](https://github.com/jekyll/jekyll)
+> We have dreams and aspirations
+> -Us Feb 14, 2016
+
+Lately our non-game products have been growing faster than our game list, but they seem to make it to production less frequently. We are in flux. Fear not, there will always be content coming out because we can't control our creative impulses. We may not always create 'traditionally useful' products, but we hope they will bring joy to some of you.
+
+If you had fun, or just got a laugh out of seeing the site, shoot us a message! We have a presense at all of our links, but if you really want to find us, [GitHub](https://github.com/SylverStudios) is definately our most frequented medium. Follow our github and send us a tweet (once we get the twitter up)!
+
+We all have solo projects and more fun stuff on our individual pages, so be sure to get to know the squad!
+
+* [Aaron]({{ site.baseurl }}{% link aaron.md %})
 
 
-[jekyll-organization]: https://github.com/jekyll
+`#sylverFamily`
