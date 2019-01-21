@@ -4,24 +4,31 @@ I think the page should be visible [SylverStudios.github.io](https://SylverStudi
 
 Here are some possible todo / consolidates
 
-### Games
+## How can I contribute?
 
-* Supervirus
-* Circuit Game (simulator)
-* TMM
-* 2upervirus
+Are you me? Have you not properly setup ruby on your old macbook? Some of these steps will relate to that issue, ignore if not applicable.
 
-### Executables
+```bash
+# macOS rb is 2.2 and insane. Must rbenv
+# https://github.com/rbenv/rbenv/issues/938
 
-* Pyxl
-* Connect 4
+rbenv versions
+rbenv local 2.6.0
 
+# install jekyll & bundler
+cd to/the/project
+gem install jekyll bundler
 
-### ???
+# Run in dev mode
+bundle exec jekyll serve
+```
 
-* WatchWithMe
-* HoN Graffiti
-* Blog posts from the old site
-* Drastic-codes
-* Vines
-* Personal Pages
+Post format: `YEAR-MONTH-DAY-title.MARKUP`
+
+## Whats weird?
+
+The `_includes` folder will overwrite the template styles. The only file in there right now is `head.html` and the only difference is that it adds a link for the favicon.
+
+## Status updates?
+
+There is a `project` in this repo that should act as the list of things to do.
