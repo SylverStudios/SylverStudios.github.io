@@ -1,0 +1,75 @@
+---
+layout: circuitgame
+title: "Circuit Simulator"
+date: 2019-01-21 12:50:00 -0500
+categories: games
+---
+
+
+<div class="circuit-game-webpage">
+  <!-- Original Publishing date: 2/15/16 -->
+  <div class="title-section">
+    <div class="title">
+      Circuit Simulator
+    </div>
+  </div>
+
+  <div id="main-left" class="col-md-3 main">
+    <div id="control-panel">
+      <div id="legend" class="panel panel-success">
+        <div class="panel-heading">Legend</div>
+        <div class="panel-body">Try another map.</div>
+        <input id="start-button" type="button" value="Next Map" />
+        <table class="table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Icon</th>
+              <th>Gate</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td><img src="/assets/circuitgame/OR.png" style="width:50px;height:50px;"></td>
+              <td>OR</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td><img src="/assets/circuitgame/AND.png" style="width:50px;height:50px;"></td>
+              <td>AND</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td><img src="/assets/circuitgame/NAND.png" style="width:50px;height:50px;"></td>
+              <td>NAND</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td><img src="/assets/circuitgame/NOR.png" style="width:50px;height:50px;"></td>
+              <td>NOR</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td><img src="/assets/circuitgame/XOR.png" style="width:50px;height:50px;"></td>
+              <td>XOR</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td><img src="/assets/circuitgame/XNOR.png" style="width:50px;height:50px;"></td>
+              <td>XNOR</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-6 main">
+    <div id="game-container" />
+  </div>
+
+  <div id="main-right" class="col-md-3 main"></div>
+</div>
+
+<script src="/assets/circuitgame/circuitgame.js"></script>
