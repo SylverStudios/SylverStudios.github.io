@@ -1,0 +1,46 @@
+/* html, body {
+  min-width: 800px;
+  min-height: 804px;
+  width: 100%;
+  height: 100%;
+  margin: 0; } */
+
+.circuit-game-webpage {
+  /* background: black; */
+  height: 100%;
+  width: 100%;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+.circuit-game-webpage .title-section {
+  width: 100%;
+  /* height: 172px; */
+  margin-bottom: 32px;
+}
+
+.circuit-game-webpage .title-section .title {
+  text-align: center;
+  font-size: 32px;
+  padding-top: 16px;
+}
+
+.circuit-game-webpage .title-section .main {
+  height: 100%;
+  width: 100%;
+}
+
+.circuit-game-webpage .title-section #game-container {
+  width: 800px;
+  height: 600px;
+  border: 1px solid blue;
+  margin: 0 auto;
+}
+
+.circuit-game-webpage .title-section #control-panel {
+  -o-user-select: none;
+  user-select: none;
+}
