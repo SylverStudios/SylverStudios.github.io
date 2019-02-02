@@ -19,8 +19,9 @@ rbenv local 2.6.0
 cd to/the/project
 gem install jekyll bundler
 
-# Run in dev mode
+# Run in dev mode, include drafts `--drafts`
 bundle exec jekyll serve
+
 ```
 
 Post format: `YEAR-MONTH-DAY-title.MARKUP`
@@ -28,6 +29,9 @@ Post format: `YEAR-MONTH-DAY-title.MARKUP`
 ## Whats weird?
 
 The `_includes` folder will overwrite the template styles. The only file in there right now is `head.html` and the only difference is that it adds a link for the favicon.
+
+Google analytics is included when we build for production: `JEKYLL_ENV=production jekyll build`
+We should confirm that when github builds the project they set that flag - unsure so far.
 
 ## Status updates?
 
