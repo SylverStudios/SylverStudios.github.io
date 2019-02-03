@@ -4,6 +4,11 @@ title:  "Circuit Simulator: What does 'game' even mean?"
 date:   2019-02-02 12:18:11 -0500
 category: blog
 ---
+The story of how we absolutely nailed our first collaborative coding experience!
+[![CircuitGame sample view of 2 logic gates](/assets/circuitFeatureImage.png){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-01-21-circuit-simulator %})
+<!-- End excerpt -->
+
+
 4me/
 
 > What do I want to say?
@@ -22,7 +27,7 @@ Aaron had always been excited about solving circuit diagrams in school and thoug
 
 ### Development
 
-The development was the most exciting part of this project for the team. Much white boarding and sitting on the couch together coding ensuied. The really exciting part of developmentwas that each circuit was a Directed Asyclic Graph, which meant Sam and Aaron got to write some fun recursive functions. Also there was a backend model to generate and test a graph for success, this was Sam's domain. Whipped up with a passion that would frighten most adults, Sam produced a great genatation engine. At the same time, Aaron was working on UI generation tool that could traverse the graphs that Sam produced and render a nice little interactive circuit diagram.
+The development was the most exciting part of this project for the team. Much white boarding and coding on the couch together ensued. The really exciting part of developmentwas that each circuit was a Directed Acyclic Graph, which meant Sam and Aaron got to write some fun recursive functions. Also there was a backend model to generate and test a graph for success, this was Sam's domain. Whipped up with a passion that would frighten most adults, Sam produced a great generation engine. At the same time, Aaron was working on UI generation tool that could traverse the graphs that Sam produced and render a nice little interactive circuit diagram.
 
 ### Reception
 
