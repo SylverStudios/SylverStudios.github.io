@@ -23,6 +23,22 @@ url: "" # the base hostname & protocol for your site, e.g. http://example.com…
 twitter_username: shamshirzdev
 github_username:  SylverStudios
 
+social_links:
+    twitter: shamshirzdev
+    github: SylverStudios
+
+google_analytics: UA-86524718-3
+
+# Taste first para of each post on the home page
+show_excerpts: true
+
+header_pages:
+  - games.html
+  - about.md
+
+# Authors - figure out how to do this
+
+
 # Build settings
 markdown: kramdown
 theme: minima
