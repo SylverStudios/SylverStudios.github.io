@@ -36,6 +36,9 @@ header_pages:
   - games.html
   - about.md
 
+# Authors - figure out how to do this
+
+
 # Build settings
 markdown: kramdown
 theme: minima
