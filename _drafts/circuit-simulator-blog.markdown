@@ -9,18 +9,20 @@ The story of how we absolutely nailed our first collaborative coding experience.
 [![CircuitGame sample view of 2 logic gates](/assets/circuitFeatureImage.png){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-01-21-circuit-simulator %})
 <!-- End excerpt -->
 
-Circuit Game is really a simulator for electrical circuits. You can toggle the input and which logic gates are in the circuit. That's it. Has some cute interactivity, but there really isn't a goal, just, "explore logic! Learning is fun!". A noble cause, but not particularly engaging.
+Circuit Game is really a simulator for electrical circuits. You can toggle the input and logic gates in the circuit and they you get to see what happens. That's it. Has some cute interactivity, but there really isn't a goal, just, "explore logic! Learning is fun!". A noble cause, but not particularly engaging.
 
 
 ### History
 
-Sam and I picked it up in October of 2015. We had each worked on a few small games, and had planned ideas together, but this was our first time coding together. We decided on the most vanilla JS possible, with a goal of producing something over worrying about pushing our boundaries too much. You can see the origins of these blossoming, young professional devs [in the CircuitGame Repo](https://github.com/SylverStudios/CircuitGame).
+Sam and I picked it up in October of 2015. We had each worked on a few small games, and had planned ideas together, but this was our first time coding together. We decided on the most vanilla JS possible, with a goal of producing something over worrying about pushing our boundaries too much. You can see the origins of these blossoming, young professional devs in the [CircuitGame Repo](https://github.com/SylverStudios/CircuitGame).
 
 Solving circuit diagrams in school was one of the few things I liked about the electrical engineering classes I took, so I figured everyone felt that way :facepalm:. The first pass at circuit simulator was not only impossible, but it was completely devoid of fun. We called it a smashing success.
 
 ### Development
 
-It can't be known exactly how the topic came up, but Sam and I were talking about how much fun it would be to make a game about electrical circuits. Much white boarding and coding on the couch together ensued. The really exciting part of developmentwas that each circuit was a Directed Acyclic Graph, which meant Sam and I got to write fun recursive functions. This was the main motivator for the project, we never really thought about how someone might "play" these circuits. Whipped up with a passion that would frighten most adults, Sam produced a great engine to create solvable circuits. At the same time, I was working on UI generation tool that could traverse the graphs that Sam produced and render a nice little interactive circuit diagram. That was the whole game, given a graph, draw it, toggle the gates and see if they user had won. We had a very loose definition of winning here.
+It can't be known exactly how the topic came up, but Sam and I were talking about how much fun it would be to make a game about electrical circuits. Much white boarding and coding on the couch together ensued. The really exciting part of developmentwas that each circuit was a Directed Acyclic Graph, which meant Sam and I got to write fun recursive functions. This was the main motivator for the project, we never really thought about how someone might "play" these circuits.
+
+In just a few days, Sam produced a great engine to create solvable circuits. At the same time, I was working on UI generation tool that could traverse the graphs that Sam produced and render a nice little interactive circuit diagram. That was the whole game, given a graph, draw it, toggle the gates and see if they user had won. We had a very loose definition of winning here. We had some serious fire about this project, hence all of the haste to build without much forethought.
 
 ### Reception
 
@@ -31,4 +33,3 @@ In the end, you may not love simulating circuits, but you will be able to feel o
 In loving memory of the Circuit Game idea,
 
 `#sylverFamily`
-
