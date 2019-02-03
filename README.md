@@ -19,8 +19,8 @@ rbenv local 2.6.0
 cd to/the/project
 gem install jekyll bundler
 
-# Run in dev mode, include drafts `--drafts`
-bundle exec jekyll serve
+# Run in dev mode, displays drafts
+bundle exec jekyll serve --drafts
 
 ```
 
