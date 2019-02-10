@@ -1,15 +1,15 @@
 ---
 layout: post
-title:  "Circuit Simulator: What does 'game' even mean?"
-date:   2019-02-02 12:18:11 -0500
+title:  "Circuit Simulator: What makes a game?"
+date:   2019-02-10 11:15:01 -0500
 category: blog
 author: Aaron
 ---
-The story of how we absolutely nailed our first collaborative coding experience.
+The story of how we absolutely nailed our first game.
 [![CircuitGame sample view of 2 logic gates](/assets/circuitFeatureImage.png){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-01-21-circuit-simulator %})
 <!-- End excerpt -->
 
-Circuit Game is really a simulator for electrical circuits. You can toggle the input and logic gates in the circuit and they you get to see what happens. That's it. Has some cute interactivity, but there really isn't a goal, just, "explore logic! Learning is fun!". A noble cause, but not particularly engaging.
+Circuit Simulator really is a _simulator_ for electrical circuits, calling it a sandbox is even a stretch. You can toggle the input and logic gates in the circuit and they you get to see what happens. That's it. Has some cute interactivity, but there really isn't a goal, just, "explore logic! Learning is fun!". A noble cause, but not particularly engaging.
 
 
 ### History
@@ -24,11 +24,23 @@ It can't be known exactly how the topic came up, but Sam and I were talking abou
 
 In just a few days, Sam produced a great engine to create solvable circuits. At the same time, I was working on UI generation tool that could traverse the graphs that Sam produced and render a nice little interactive circuit diagram. That was the whole game, given a graph, draw it, toggle the gates and see if they user had won. We had a very loose definition of winning here. We had some serious fire about this project, hence all of the haste to build without much forethought.
 
+
 ### Reception
 
 Somewhere amidst all of this fun and excitement, it turns out the most people don't really like to solve circuit diagrams… I was so enamored by the nice Paintbrush created logic gate icons, that I never realized that the purpose of a game is to accomplish something, not just enjoy the crispness of the icons. At the end of the day, we had created a real franken-game. Existing somewhere between proud, embarassed, and bullishly ignorant, we published the game on our original site under the title Circuit Game. It wasn't actually a game, but the effort was in, and there was a feeling a accomplishment that spread throughout the Mansion (our house) despite the weird outcome.
 
-In the end, you may not love simulating circuits, but you will be able to feel our misplaced love and determination. [Don't be shy, come play some now!]({% post_url 2019-01-21-circuit-simulator %})
+### Retrospective
+
+Recently, the team went to an game developer conference in boston ([Boston Fig](https://www.bostonfig.com/talks/)). While we were there, I heard an interesting take on game development, where a game is…
+
+> the voluntary attempt to overcome unnecessary obstacles
+>
+> -- <cite>[The Grasshopper -1978](https://www.goodreads.com/book/show/803547.The_Grasshopper)</cite>
+
+As Sam pointed out, "if the metric is unnecessariness [sic], then this is the best Game ever created.". That being said, I'm back on the side of calling Circuit Simulator a game, and it's going in the game category gosh-darnit!
+
+
+In the end, you may not love simulating circuits, but you will be able to feel our misplaced love and determination. [Don't be shy, go play!]({% post_url 2019-01-21-circuit-simulator %})
 
 In loving memory of the Circuit Game idea,
 
