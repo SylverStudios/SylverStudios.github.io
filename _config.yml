@@ -18,8 +18,8 @@ email: sylverstudiosdev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Sylver Studios is an indie game dev group based in Boston. We are friends that
   share this brand as a convenient place to co-publish fun toys.
-baseurl: "/s" # the subpath of your site, e.g. /blog…to be /s
-url: "https://www.sylverstud.io" # the base hostname & protocol for your site, e.g. http://example.com…to be https://sylverstud.io
+baseurl: "" # the subpath of your site, e.g. /blog…to be /s
+url: "" # the base hostname & protocol for your site, e.g. http://example.com…to be https://sylverstud.io
 twitter_username: shamshirzdev
 github_username:  SylverStudios
 
