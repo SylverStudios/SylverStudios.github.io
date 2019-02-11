@@ -6,7 +6,7 @@ category: blog
 author: Aaron
 ---
 The story of how we absolutely nailed our first game.
-[![CircuitGame sample view of 2 logic gates]({{ site.baseurl }}/assets/circuitFeatureImage.png){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-01-21-circuit-simulator %})
+[![CircuitGame sample view of 2 logic gates](/assets/circuitFeatureImage.png){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-01-21-circuit-simulator %})
 <!-- End excerpt -->
 
 Circuit Simulator really is a _simulator_ for electrical circuits, calling it a sandbox is even a stretch. You can toggle the input and logic gates in the circuit and they you get to see what happens. That's it. Has some cute interactivity, but there really isn't a goal, just, "explore logic! Learning is fun!". A noble cause, but not particularly engaging.
