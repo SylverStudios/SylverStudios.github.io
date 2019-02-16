@@ -13,10 +13,8 @@ categories: games
 </script>
 
 <style type="text/css" media="screen">
-  body {
-    background: black;
+  #supervirus-body {
     text-align: center;
-    color: #DDD;
     font-family: Arial;
   }
 
@@ -24,7 +22,11 @@ categories: games
     color: #BBB;
   }
 
-  #cr-stage { margin: 20px auto 0; }
+  #cr-stage {
+    margin: 20px auto 0;
+    border: 2px solid #EEE;
+    border-radius: 3px;
+  }
 
   .bottom {
     font-size: 12px;
@@ -36,7 +38,7 @@ categories: games
     color: #AAA;
   }
 </style>
-<body>
+<div id="supervirus-body">
   <h2>Supervirus</h2>
 
   <p>Controls: Arrow Keys.  Hit things smaller than you and avoid things larger than you.  Godspeed.</p>
