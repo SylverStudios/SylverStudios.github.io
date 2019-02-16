@@ -5,7 +5,7 @@ date:   2019-01-21 10:39:11 -0500
 categories: news
 ---
 Die hard fans, welcome & bienvenidos;
-![SylverStudios SylverBar Logo](/assets/sylverbar100.png){:class="float-right-plz"}
+![SylverStudios SylverBar Logo]({{ "/assets/sylverbar100.png" | relative_url }}){:class="float-right-plz"}
 <!-- Ends the excerpt text, it includes the image -->
 
 
