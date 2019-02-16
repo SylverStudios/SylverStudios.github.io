@@ -1,10 +1,24 @@
-## WIP: Attempt to consolidate content and make it super easy to update
+# The new and improved website!
+[SylverStudios.github.io](https://SylverStudios.github.io) & [Sylverstud.io](https://sylverstud.io)
 
-I think the page should be visible [SylverStudios.github.io](https://SylverStudios.github.io)
+The goal is to make this a safe and easy place to post anything we want. Games, apps, ideas, whatever. If you're unsure, make a draft and push a branch, it won't go live and everyone else can give feedback.
 
-Here are some possible todo / consolidates
+## How's it work?
+
+* Github will build/deploy master to [SylverStudios.github.io](https://SylverStudios.github.io)
+* Heroku will build/deploy master to [Sylverstud.io](https://sylverstud.io)
+* Branches won't get deployed, and it doesn't push drafts live, so feel free to try things out.
 
 ## How can I contribute?
+
+Open a PR, add a new `post` file (Post format: `YEAR-MONTH-DAY-title.MARKUP`). If the file is under drafts, it won't need the date. Run it locally to make sure everything is working. Pretty straight forward.
+
+```bash
+bundle exec jekyll serve --drafts
+```
+
+<details><summary>Ruby Mac help</summary>
+<p>
 
 Are you me? Have you not properly setup ruby on your old macbook? Some of these steps will relate to that issue, ignore if not applicable.
 
@@ -24,15 +38,17 @@ bundle exec jekyll serve --drafts
 
 ```
 
-Post format: `YEAR-MONTH-DAY-title.MARKUP`
+</p>
+</details>
 
 ## Whats weird?
 
-The `_includes` folder will overwrite the template styles. The only file in there right now is `head.html` and the only difference is that it adds a link for the favicon.
+### `_includes` Folder
 
-Google analytics is included when we build for production: `JEKYLL_ENV=production jekyll build`
+Overwrite the template styles.
+Example: The `head.html` is copied from `Minima` our current theme, the only difference is that it adds a link for the favicon.
+
+### Analytics
+
+Auto included when we build for production: `JEKYLL_ENV=production jekyll build`
 We should confirm that when github builds the project they set that flag - unsure so far.
-
-## Status updates?
-
-There is a `project` in this repo that should act as the list of things to do.
