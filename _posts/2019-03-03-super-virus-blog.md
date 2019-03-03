@@ -9,14 +9,14 @@ author: Aaron
 <!-- First Para is used as the Excerpt -->
 _How our first published game became the cornerstone to everything else we've made._
 <!-- Image and link…not 100%-->
-[![SuperVirus sample picture]({{ "/assets/superVirusSampleRound.png" | relative_url }}){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-02-16-supervirus %})
+[![Supervirus sample picture]({{ "/assets/supervirusSampleRound.png" | relative_url }}){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-02-16-supervirus %})
 <!-- End Excerpt -->
 
 <br>
 
-**Every** maker probably has a project like this, whether you are a developer, designer, carpenter, artist in any capacity. A go-to project that you understand so well, you can sit down and remake it in a different flavor in no time. [SuperVirus]({% post_url 2019-02-16-supervirus %}) has been our key to learning since college.
+**Every** maker probably has a project like this, whether you are a developer, designer, carpenter, artist in any capacity. A go-to project that you understand so well, you can sit down and remake it in a different flavor in no time. [Supervirus]({% post_url 2019-02-16-supervirus %}) has been our key to learning since college.
 
-SuperVirus was our first idea for a game that we would release. I hadn't published anything online before and had hardly done any web development. Sam, Aaron, and James brainstormed the original idea. Sam went off, made the whole thing, and published.
+Supervirus was our first idea for a game that we would release. I hadn't published anything online before and had hardly done any web development. Sam, Aaron, and James brainstormed the original idea. Sam went off, made the whole thing, and published.
 
 <br>
 
