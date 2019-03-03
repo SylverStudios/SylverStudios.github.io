@@ -20,6 +20,7 @@ Aaron is an adventurer of all things software. He came to Elixir from a Java and
 * [Slow Burn](https://slate.com/slow-burn)
 * [Enter the Gungeon](http://dodgeroll.com/gungeon/)
 * [Stardew Valley](https://www.stardewvalley.net/)
+* [Programming Sucks](http://www.stilldrinking.org/programming-sucks)
 
 
 ## Other fun things
