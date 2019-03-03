@@ -5,7 +5,7 @@ date:   2019-02-10 11:15:01 -0500
 category: blog
 author: Aaron
 ---
-The story of how we absolutely nailed our first game.
+_The story of how we absolutely nailed our first game._
 <!-- This is an image, with a class, and on click links to the game :face-palm: -->
 [![CircuitGame sample view of 2 logic gates]({{ "/assets/circuitFeatureImage.png" | relative_url }}){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-01-21-circuit-simulator %})
 <!-- End excerpt -->
