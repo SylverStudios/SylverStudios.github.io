@@ -63,7 +63,7 @@ There seems to be general fear around disobeying DRY principles, but depending o
 
 > If you find yourself passing parameters and adding conditional paths through shared code, the abstraction is incorrect.
 >
-> -- <cite>[Sandimetz](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)</cite>
+> -- <cite>[Sandi Metz](https://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction)</cite>
 
 
 If we don’t expect to use the **Date Tracking** functionality again, then why spend the time to extract it cleanly? If being DRY means that you are writing more code to accommodate each specific use, then I think it’s safe to say that something is wrong.
