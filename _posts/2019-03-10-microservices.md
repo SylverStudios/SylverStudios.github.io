@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "When and What to share between Microservices"
-date:   2019-03-03 1:25:01 -0500
+date:   2019-03-10 11:40:01 -0500
 category: blog
 tags: composition DRY inheritance microservices
 author: Aaron
