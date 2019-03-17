@@ -9,7 +9,7 @@ _Die hard fans, welcome & bienvenidos;_
 <!-- Ends the excerpt text, it includes the image -->
 
 
-So glad you could join us on this holy day (also MLK day, double-dope). Why is it a holy day you ask? Because we are taking the next step towards being legit. We are consolidating some of the more disparate resources that we've published under the `SylverStudios` tag; vines(link?), blog posts(link?), and games(link?). We have also simplified some of the infrastructure, so :fingers-crossed: we will keep this site up to date and it will look pretty too!
+So glad you could join us on this holy day (also MLK day, double-dope). Why is it a holy day you ask? Because we are taking the next step towards being legit. We are consolidating some of the more disparate resources that we've published under the `SylverStudios` tag; [Vines](https://vine.co/u/1023073943265157120), blog posts, and games. We have also simplified some of the infrastructure, so :fingers-crossed: we will keep this site up to date and it will look pretty too!
 
 We are still figuring out this `Jekyll` thing, but it's been pretty painless so far. As always, we love feedback, let us know what you think and we will keep being your favorite place for news & sports coverage.
 
