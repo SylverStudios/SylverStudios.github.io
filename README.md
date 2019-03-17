@@ -68,3 +68,15 @@ Example: The `head.html` is copied from `Minima` our current theme, the only dif
 
 Auto included when we build for production: `JEKYLL_ENV=production jekyll build`
 We should confirm that when github builds the project they set that flag - unsure so far.
+
+
+## Debug live
+
+```
+heroku login
+heroku apps
+# big list
+```
+
+* `heroku run bash -a <app_name_here>`
+* `heroky logs -n 100 -t -a <app_name_here>
