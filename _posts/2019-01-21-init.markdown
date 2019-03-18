@@ -13,6 +13,4 @@ So glad you could join us on this holy day (also MLK day, double-dope). Why is i
 
 We are still figuring out this `Jekyll` thing, but it's been pretty painless so far. As always, we love feedback, let us know what you think and we will keep being your favorite place for news & sports coverage.
 
-(Insert feedback link here - google form? netlify form? just the email? Add disqus? Maybe we need to get visitors first, amirite?)
-
 `#sylverFamily`

@@ -1,5 +1,5 @@
 # The new and improved website!
-[SylverStudios.github.io](https://SylverStudios.github.io) & [Sylverstud.io](https://sylverstud.io)
+[SylverStudios.github.io](https://SylverStudios.github.io) & [Sylverstud.io](https://sylverstud.io) & [sylverstudios.dev](https://sylverstudios.dev)
 
 The goal is to make this a safe and easy place to post anything we want. Games, apps, ideas, whatever. If you're unsure, make a draft and push a branch, it won't go live and everyone else can give feedback.
 
@@ -20,7 +20,7 @@ bundle exec jekyll serve --drafts
 <details><summary>Development Environment setup - Mac</summary>
 <p>
 
-Are you me? Have you not properly setup ruby on your old macbook? Some of these steps will relate to that issue, ignore if not applicable.
+Are you me? Have you not properly setup ruby on your old mcBook? Some of these steps will relate to that issue, ignore if not applicable.
 
 ### Ruby Setup
 We need `ruby` installed, at the correct version, to run `jekyll`.
@@ -76,7 +76,6 @@ We should confirm that when github builds the project they set that flag - unsur
 heroku login
 heroku apps
 # big list
+heroku run bash -a <app_name_here>
+heroku logs -n 100 -t -a <app_name_here>
 ```
-
-* `heroku run bash -a <app_name_here>`
-* `heroky logs -n 100 -t -a <app_name_here>

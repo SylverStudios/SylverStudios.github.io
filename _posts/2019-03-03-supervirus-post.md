@@ -20,7 +20,7 @@ Supervirus was our first idea for a game that we would release. I hadn't publish
 
 <br>
 
-**Since** then, we've remade it 3 times. Originally, Sam wote it in [CraftyJS](http://craftyjs.com/), then rewrote it in raw Html & Canvas. I rewrote it in [Elm](https://elm-lang.org/), and RJ rerwote it for [Unity](https://unity3d.com/). It's been a great tool to compare and contrast the pros and cons of different languages and tools. I never would have guessed that this first game would have such a lasting effect on us, and undoubtedly will continue to pay dividends.
+**Since** then, we've remade it 3 times. Originally, Sam wrote it in [CraftyJS](http://craftyjs.com/), then rewrote it in raw Html & Canvas. I rewrote it in [Elm](https://elm-lang.org/), and RJ rewrote it for [Unity](https://unity3d.com/). It's been a great tool to compare and contrast the pros and cons of different languages and tools. I never would have guessed that this first game would have such a lasting effect on us, and undoubtedly will continue to pay dividends.
 
 
 If you're a budding dev, or generally into exploration, make something small and silly. Remake it a million times. It doesn't matter how good it is. It's your tool for learning, even if others don't see it as beautiful, you will always look on it fondly, and that's what's important, amirite?
