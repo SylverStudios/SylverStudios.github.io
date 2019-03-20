@@ -28,7 +28,7 @@ In just a few days, Sam produced a great engine to create solvable circuits. At 
 
 ### Reception
 
-Somewhere amidst all of this fun and excitement, it turns out the most people don't really like to solve circuit diagrams… I was so enamored by the nice Paintbrush created logic gate icons, that I never realized that the purpose of a game is to accomplish something, not just enjoy the crispness of the icons. At the end of the day, we had created a real franken-game. Existing somewhere between proud, embarrassed, and bullishly ignorant, we published the game on our original site under the title Circuit Game. It wasn't actually a game, but the effort was in, and there was a feeling a accomplishment that spread throughout the Mansion (our house) despite the weird outcome.
+Somewhere amidst all of this fun and excitement, it turns out the most people don't really like to solve circuit diagrams… I was so enamored by the nice Paintbrush-created logic gate icons, that I never realized that the purpose of a game is to accomplish something, not just enjoy the crispness of the icons. At the end of the day, we had created a real franken-game. Existing somewhere between proud, embarrassed, and bullishly ignorant, we published the game on our original site under the title Circuit Game. It wasn't actually a game, but the effort was in, and there was a feeling of accomplishment that spread throughout the Mansion (our house), like a furtive pee in the ocean, despite the weird outcome.
 
 ### Retrospective
 
