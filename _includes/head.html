@@ -16,15 +16,16 @@
   {% endif %}
   <meta name="twitter:title" content="{{ page.title }}">
 
-  {% if page.summary %}
+  <!-- twitter description from excerpt  -->
+  <!-- {% if page.summary %}
   <meta name="twitter:description" content="{{ page.summary }}">
-  {% else %}
+  {% else %} -->
   <meta name="twitter:description" content="{{ site.description }}">
   {% endif %}
 
   {% if page.image %}
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
+  <meta name="twitter:image" content="{{ page.image | relative_url }}">
   {% else %}
   <meta name="twitter:card" content="summary">
   <meta name="twitter:image" content="{{ site.title_image }}">
