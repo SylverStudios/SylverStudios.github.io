@@ -1,8 +1,12 @@
 ---
 layout: post
 title:  "It's Alive!"
+summary: git commit -m initial commit
 date:   2019-01-21 10:39:11 -0500
 categories: news
+author: Aaron
+author_twitter: shamshirz
+image: /assets/sylverbar100.png
 ---
 _Die hard fans, welcome & bienvenidos;_
 ![SylverStudios SylverBar Logo]({{ "/assets/sylverbar100.png" | relative_url }}){:class="float-right-plz"}
