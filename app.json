@@ -1,7 +1,5 @@
 {
-  "addons": [
-
-  ],
+  "addons": [],
   "buildpacks": [
     {
       "url": "heroku/ruby"
@@ -23,8 +21,7 @@
       "quantity": 1
     }
   },
-  "name": "SylverStudios.github.io",
-  "scripts": {
-  },
+  "name": "SylverStudios blog!",
+  "scripts": {},
   "stack": "heroku-18"
 }

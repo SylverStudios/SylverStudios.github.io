@@ -3,8 +3,9 @@ layout: post
 title: "When and What to share between Microservices"
 date:   2019-03-10 11:40:01 -0500
 category: blog
-tags: composition DRY inheritance microservices
 author: Aaron
+author_twitter: shamshirz
+image: /assets/compVSinhert.png
 ---
 
 _Exploring the best way to handle the extraction of common code related to the persistence logic._

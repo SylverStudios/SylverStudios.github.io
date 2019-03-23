@@ -4,6 +4,8 @@ title:  "Circuit Simulator: What makes a game?"
 date:   2019-02-10 11:15:01 -0500
 category: blog
 author: Aaron
+author_twitter: shamshirz
+image: /assets/circuitFeatureImage.png
 ---
 _The story of how we absolutely nailed our first game._
 <!-- This is an image, with a class, and on click links to the game :face-palm: -->

@@ -4,6 +4,8 @@ title: "The Studio's Nucleus"
 date:   2019-03-03 12:04:01 -0500
 category: blog
 author: Aaron
+author_twitter: shamshirz
+image: /assets/supervirusSampleRound.png
 ---
 
 <!-- First Para is used as the Excerpt -->
