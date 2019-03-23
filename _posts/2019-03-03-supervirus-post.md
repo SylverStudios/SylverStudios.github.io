@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "The Studio's Nucleus"
-summary: How Supervirus became our most important project
 date:   2019-03-03 12:04:01 -0500
 category: blog
 author: Aaron

@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "When and What to share between Microservices"
-summary: A discussion of duplication
 date:   2019-03-10 11:40:01 -0500
 category: blog
 author: Aaron

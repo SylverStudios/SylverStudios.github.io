@@ -1,7 +1,6 @@
 ---
 layout: post
 title:  "Circuit Simulator: What makes a game?"
-summary: Our first co-authored game
 date:   2019-02-10 11:15:01 -0500
 category: blog
 author: Aaron
