@@ -18,6 +18,7 @@ If you had fun, or just got a laugh out of seeing the site, shoot us a message! 
 We all have solo projects and more fun stuff on our individual pages, so be sure to get to know the squad!
 
 * [Aaron]({{ site.baseurl }}{% link aaron.md %})
+* [RJ]({{ site.baseurl }}{% link rj.md %})
 
 
 `#sylverFamily`
