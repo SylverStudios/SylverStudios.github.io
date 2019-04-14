@@ -5,7 +5,7 @@ permalink: /about/rj/
 ---
 
 RJ has always loved video games and computers. His first game console was the
-Sega Genesis, with which he fell in love with the original
+Sega Genesis, through which he fell in love with the original
 [Sonic the Hedgehog
 games](https://en.wikipedia.org/wiki/Sonic_the_Hedgehog#Sega_Genesis_(1991%E2%80%931996)). He also loved simulation games such as
 [Rollercoaster Tycoon](https://en.wikipedia.org/wiki/RollerCoaster_Tycoon),
