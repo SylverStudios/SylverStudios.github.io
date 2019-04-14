@@ -1,7 +1,7 @@
 ---
 layout: page
 title: RJ
-permalink: /about/rj
+permalink: /about/rj/
 ---
 
 RJ has always loved video games and computers. His first game console was the
