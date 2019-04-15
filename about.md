@@ -20,5 +20,6 @@ We all have solo projects and more fun stuff on our individual pages, so be sure
 
 * [Aaron]({{ site.baseurl }}{% link aaron.md %})
 * [RJ]({{ site.baseurl }}{% link rj.md %})
+* [Sam]({{ site.baseurl }}{% link sam.md %})
 
 `#sylverFamily`
