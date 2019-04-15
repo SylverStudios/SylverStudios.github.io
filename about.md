@@ -2,7 +2,8 @@
 layout: page
 title: About
 permalink: /about/
-image: /assets/sylverFam.png
+image: /assets/sylver-fam.png
+description: We are a band of rogue developers. Raised by wolves. Wild and unflappable.
 ---
 
 We are a band of rogue developers. Raised by wolves. Wild and unflappable.
@@ -13,7 +14,7 @@ We like to makes games sometimes, and non-games too. We started making games whe
 
 
 <div class="image-with-quote" markdown="1">
-  ![Sam, Aaron, RJ dressed as Always Sunny In Philadelphia with honorary members]({{ "/assets/sylverFam.png" | relative_url }}){:class="about-image"}
+  ![Sam, Aaron, RJ dressed as Always Sunny In Philadelphia with honorary members]({{ "/assets/sylver-fam.png" | relative_url }}){:class="about-image"}
 
 
   > We have dreams and aspirations
