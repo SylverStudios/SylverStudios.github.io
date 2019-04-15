@@ -33,3 +33,16 @@
   justify-content: center;
 }
 
+.image-with-quote {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  blockquote {
+    height: fit-content;
+  }
+}
+
+.about-image {
+  height: 200px;
+}
