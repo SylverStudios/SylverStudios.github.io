@@ -33,3 +33,22 @@
   justify-content: center;
 }
 
+.image-with-quote {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+
+  blockquote {
+    height: fit-content;
+    flex: 1;
+  }
+}
+
+.about-image {
+  height: 200px;
+}
+
+.aaron-page-image {
+  float: right;
+  height: 200px;
+}

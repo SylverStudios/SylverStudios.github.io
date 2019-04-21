@@ -2,15 +2,27 @@
 layout: page
 title: About
 permalink: /about/
+image: /assets/sylver-fam.png
+description: We are a band of rogue developers. Raised by wolves. Wild and unflappable.
 ---
 
 We are a band of rogue developers. Raised by wolves. Wild and unflappable.
 
+
 We like to makes games sometimes, and non-games too. We started making games when Sam and Aaron discovered coding in college and it's been history ever since. We scooped up RJ along the way; throwing away his previous career for the glory that befalls all indie developers.
 
-> We have dreams and aspirations
->
-> — Us, Feb 14, 2016
+
+
+<div class="image-with-quote" markdown="1">
+  ![Sam, Aaron, RJ dressed as Always Sunny In Philadelphia with honorary members]({{ "/assets/sylver-fam.png" | relative_url }}){:class="about-image"}
+
+
+  > We have dreams and aspirations
+  >
+  > — Us,  Feb 14,  2016
+</div>
+
+
 
 Lately our non-game products have been growing faster than our game list, but they seem to make it to production less frequently. We are in flux. Fear not, there will always be content coming out because we can't control our creative impulses. We may not always create 'traditionally useful' products, but we hope they will bring joy to some of you.
 
