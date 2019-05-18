@@ -32,7 +32,7 @@ We made a heavily menu based game that would have been easy for us in React, or 
 
 Art takes so much longer than you expect it to! We worked on the project for about 15 hours, and it's crazy how few assets came out of that. In retrospect, there is also so much more to the aesthetic of your game than just the few images of game pieces. The designer's role can encompass the entire feel of the game. With [The Ferryman]({{ site.baseurl }}{% post_url 2019-04-10-ferryman %}) we had a lot of text, menus, and backgrounds.
 
-Choosing a color pallet and letting Sam and RJ get at it just wasn't enough to give the in-game Bar the feeling that we wanted. Next time around, I think the design role will be a more holistic job, focused on putting less effort into more aspects of the game, instead of lots of effort into a handful of assets.
+Choosing a color palette and letting Sam and RJ get at it just wasn't enough to give the in-game bar the feeling that we wanted. Next time around, I think the design role will be a more holistic job, focused on putting less effort into more aspects of the game, instead of lots of effort into a handful of assets.
 
 
 ## Timeline
