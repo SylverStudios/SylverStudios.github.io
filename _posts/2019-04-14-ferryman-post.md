@@ -11,21 +11,27 @@ _48 hour sprint to Unity greatness_
 [![Ferryman image]({{ "/assets/ferryman-glass.png" | relative_url }}){:class="excerpt-image"}]({{ site.baseurl }}{% post_url 2019-04-10-ferryman %})
 <!-- Ends the excerpt text, it includes the image -->
 
-
-How it works.
-
 * Start Friday.
 * Build a game that is loosely based on the theme of "Spirits".
-* Stop working on Sunday.
+* Submit on Sunday.
 
-This was the first time we've joined a challenge like this, so we decided to increase the difficulty by making it our first published game made in Unity. We broke up into 3 roles for the most part; Aaron on art; Sam building the C# game logic; RJ tying everything together in Unity. We each learned a lot about our roles, and how different they are from some of the other games we made.
+Let RJ set the scene
+> You're sitting at long IKEA table in a studio apartment in Somerville, MA with your two bros, taking turns dipping a baguette into a container of chive cream cheese. Because that's just how it works."
+
+
+This was the first time we've joined a challenge like this, so obviously we had to further increase the difficulty by forcing ourselves to build and publish it in Unity, which we only have a few tutorials' worth of experience with.
+We broke up into 3 roles for the most part: Aaron on art, Sam building the C# game logic, and RJ tying everything together in Unity. We each learned a lot about our roles, and how different specializing like that was from our experiences building our other games.
 
 
 ## Unity
 
-The built in collaboration tool was surprisingly great! We are accustomed [Git](https://github.com/SylverStudios) at work and for personal projects, but we tried the Unity built in collaboration tool and ended up sticking with it. There were a couple bumps along the way, but we highly recommend trying it out.
+We started out worried about how we would collaborate on the game, and in such a rapid-fire way that the time constraints demanded.
+We are all accustomed to [Git](https://github.com/SylverStudios) at work and for personal projects, but since Unity controls so much of the entire development experience, including the translation from what you see in the GUI to what gets stored in which files, Git doesn't seem to be a great tool for it.
+Luckily, Unity comes with it's own built-in collaboration tool that has its own push, pull, conflict resolution, and cloud storage solutions.
+We tried it out and, voila! It worked seamlessly, and allowed for us to hit a very high collaborative velocity.
 
-We made a heavily menu based game that would have been easy for us in React, or Elm, but in Unity we were blind. After a good amount of fighting with C#, we did end up with a couple working pages, but I expect there is a much easier way to build UI. C# isn't to blame for that, but we unanimously enjoy the languages that we write usually, but the support of Unity makes C# worth it.
+There was an exciting learning curve to layout in Unity. We have experience with web design and layout in systems like React and Elm, but that experience didn't exactly translate to Unity menu & page layout. We were learning Unity at max velocity, so we had to make some compromises: like not learning The Right Way ™ to do layout in Unity, and accepting madness like hardcoding 20px padding in ridiculous functions called `MakeRoom()`.
+C# isn't to blame for that, nor is the Unity layout system, but sacrifices were necessary. I expect this to be far easier the next time around.
 
 
 ## Design
