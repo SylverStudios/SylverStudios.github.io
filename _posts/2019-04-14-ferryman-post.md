@@ -39,7 +39,7 @@ Choosing a color palette and letting Sam and RJ get at it just wasn't enough to 
 
 This part was awesome for us. Historically, we have had very soft deadlines, if any at all. The deadline was non-negotiable and it was short, we knew exactly how much effort we would be able to put in before losing our sanity. We prioritized ruthlessly, cutting out many "fun", but inessential features. At the end of Saturday morning, we had a plan for the minimal features that we could still consider a "game."
 
-Of course this didn't lead to the worlds most exciting game, but that wasn't our goal. We wanted to challenge ourself to plan well, and execute. That has been a problem in the past for us, and this was the best opportunity we've had to really test out or self-control.
+Of course this didn't lead to the worlds most exciting game, but that wasn't our goal. We wanted to challenge ourself to plan well, and execute. That has been a problem in the past for us, and this was the best opportunity we've had to really test out our self-control.
 
 
 ## So, what happened at the end?
