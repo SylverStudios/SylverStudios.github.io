@@ -60,7 +60,7 @@ The constraint of the jam was a huge benefit, because we _had_ to think thin, we
 
 Of course this didn't lead to the world's most exciting game, but that wasn't our goal.
 We wanted to challenge ourselves to learn Unity, plan well, and execute.
-That has been a problem in the past for us, and this was the best opportunity we've had to really test out or self-control.
+That has been a problem in the past for us, and this was the best opportunity we've had to really test out our self-control.
 To put our plan in perspective, we worked for 13 hours straight Saturday, got up and did a sanity gym session and got back to work with just enough sanity to be in public.
 
 
