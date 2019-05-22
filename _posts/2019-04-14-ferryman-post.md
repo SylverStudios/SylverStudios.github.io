@@ -24,12 +24,13 @@ We broke up into 3 roles for the most part: Aaron on art, Sam building the C# ga
 
 
 ## Unity
-
+### Collaboration
 We started out worried about how we would collaborate on the game, and in such a rapid-fire way that the time constraints demanded.
 We are all accustomed to Git and [Github](https://github.com/SylverStudios) at work and for personal projects, but since Unity controls so much of the entire development experience, including the translation from what you see in the GUI to what gets stored in which files, Git doesn't seem to be a great tool for it.
 Luckily, Unity comes with it's own built-in collaboration tool that has its own push, pull, conflict resolution, and cloud storage solutions.
 We tried it out and, voila! It worked seamlessly, and allowed for us to hit a very high collaborative velocity.
 
+### Layout
 There was an exciting learning curve to layout in Unity.
 We have experience with web design and layout in systems like React and Elm, but that experience didn't exactly translate to Unity menu & page layout.
 We were learning Unity at max velocity, so we had to make some compromises: like not learning The Right Way ™ to do layout in Unity, and accepting madness like hardcoding 20px padding in ridiculous functions called `MakeRoom()`.
@@ -53,10 +54,11 @@ Next time around, I think the design role will be a more holistic job, focused o
 
 This part was awesome for us.
 Historically, we have had very soft deadlines, if any at all.
-The deadline was non-negotiable and it was short, we knew exactly how much effort we would be able to put in before losing our sanity.
+The deadline was non-negotiable and it was short; we knew exactly how much effort we would be able to put in before losing our sanity.
 We prioritized ruthlessly, cutting out many "fun", but inessential features.
 We went through many rounds of scaling down the scope and at the end of Saturday morning, we had a plan for the minimal features that we could still consider a "game."
-The constraint of the jam was a huge benefit, because we _had_ to think thin, we set ourselves up for success and produced something usable.
+The constraint of the jam was a huge benefit.
+We _had_ to think thin, we set ourselves up for success, and produced something usable.
 
 Of course this didn't lead to the world's most exciting game, but that wasn't our goal.
 We wanted to challenge ourselves to learn Unity, plan well, and execute.
@@ -72,8 +74,7 @@ Sunday afternoon, wrapping up the game, trying to build a WebGL version to publi
 
 Despite how disqualifying our mistake was, we were on a mission to challenge ourselves, and we absolutely crushed it.
 We loved the jam; **We pushed ourselves to the limit of our sanity and physical well being**, learned an unearthly amount for a single weekend, and had a blast.
-To everyone out there that is thinking about making games.
-I was scared to do a game jam.
+To everyone out there that is thinking about making games: I was scared to do a game jam.
 We would go to events and everyone would suggest doing a jam, constantly telling us how good it would be for our personal development.
 They were right; **necessity and constraint forced us to focus and learn** with the gusto of boys half our age.
 We certainly didn't need to wait as long as we did. The great part is that signing up takes like 2 minutes, so if you can overcome your fear for that long, you'll be able to do it!
