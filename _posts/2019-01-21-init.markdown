@@ -8,7 +8,7 @@ author_twitter: shamshirz
 image: /assets/sylverbar100.png
 ---
 _Die hard fans, welcome & bienvenidos;_
-![SylverStudios SylverBar Logo]({{ "/assets/sylverbar100.png" | relative_url }}){:class="float-right-plz"}
+![SylverStudios SylverBar Logo]({{ "/assets/sylverbar100.png" | relative_url }}){:class="excerpt-image"}
 <!-- Ends the excerpt text, it includes the image -->
 
 
