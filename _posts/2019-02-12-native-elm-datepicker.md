@@ -4,9 +4,11 @@ title: "Native Elm Datepicker"
 date: 2019-04-12 5:00:00 -0500
 category: blog
 author: RJ
-author_twitter:
-image:
+author_twitter: SylverStudios
+image: /assets/elm-datepicker.png
 ---
+
+_The pros and cons of using a native browser datepicker in Elm._
 
 When browser support for date input types was worse (or non-existent), JavaScript datepickers were a common solution if you needed to allow a user to enter a date on a form. These days, browser support is much better, making native browser datepickers a much more viable option. If you need a datepicker in Elm, there is a package that will meet your needs ([CurrySoftware/elm-datepicker](https://github.com/CurrySoftware/elm-datepicker)), but it is more cumbersome than the native browser option, which in Elm is pretty easy to use.
 
