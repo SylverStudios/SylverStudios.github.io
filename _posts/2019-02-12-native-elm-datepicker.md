@@ -12,7 +12,7 @@ _The pros and cons of using a native browser datepicker in Elm._
 
 When browser support for date input types was worse (or non-existent), JavaScript datepickers were a common solution if you needed to allow a user to enter a date on a form. These days, browser support is much better, making native browser datepickers a much more viable option. If you need a datepicker in Elm, there is a package that will meet your needs ([CurrySoftware/elm-datepicker](https://github.com/CurrySoftware/elm-datepicker)), but it is more cumbersome than the native browser option, which in Elm is pretty easy to use.
 
-To use the native browser datepicker in Elm all you need to do is add an input tag, capture its input events with `Html.Events.onInput`, and parse the value of the input event for a date. The value will be a string containing a date in the ISO 8601 format (YYYY-MM-DD).
+To use the native browser datepicker in Elm all you need to do is add an input tag, capture its input events with [`Html.Events.onInput`](https://package.elm-lang.org/packages/elm/html/1.0.0/Html-Events#onInput), and parse the value of the input event for a date. The value will be a string containing a date in the ISO 8601 format (YYYY-MM-DD).
 
 Here is very simple Ellie example demonstrating how it works:
 
