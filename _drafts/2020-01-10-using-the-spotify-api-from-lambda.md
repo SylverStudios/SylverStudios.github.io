@@ -12,6 +12,8 @@ Build a serverless stack for accessing the Spotify API from your website
 
 <!--more-->
 
+# Technical In Depth - Lambda
+
 ## TODO
 
 * Spotify & Lambda icons for blog image

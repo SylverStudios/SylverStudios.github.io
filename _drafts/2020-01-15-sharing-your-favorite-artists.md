@@ -11,6 +11,7 @@ image: /assets/teller-sprite-twitter.png
 I love Spotify. It captures a reflection of myself that cane be hard to observe. Often my recent music taste can give a better summary of myself than I can. Conveniently, they also have a nice API that can make sharing that with your friends pretty easy too.
 
 <!--more-->
+# Technical Overview
 
 ## What I get out of it
 
