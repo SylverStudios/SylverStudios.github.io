@@ -33,7 +33,7 @@ img ->
 
 Elm -> API Gateway -> Lambda (DynamoDB) -> Spotify API
 
-<div id="elm"></div>
+{% include spotifyArtists.html %}
 
 ## Highlights
 

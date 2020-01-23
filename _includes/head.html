@@ -9,10 +9,6 @@
   {%- include google-analytics.html -%}
   {%- endif -%}
 
-  {%- if page.spotify_artists -%}
-  <link rel="stylesheet" href={{ "/assets/spotify/artists-widget.css" | relative_url }}>
-  <script src={{ "/assets/spotify/artists-widget.js" | relative_url }}></script>
-  {%- endif -%}
 
   <!-- Twitter cards -->
   <meta name="twitter:site" content="@{{ site.twitter_username }}">
