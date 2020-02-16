@@ -67,7 +67,10 @@ Example: The `head.html` is copied from `Minima` our current theme, the only dif
 ### Analytics
 
 Auto included when we build for production: `JEKYLL_ENV=production jekyll build`
-We should confirm that when github builds the project they set that flag - unsure so far.
+Github Pages are adding these so far.
+
+
+- [] Is Netflify deploying this too?
 
 
 ## Debug live
