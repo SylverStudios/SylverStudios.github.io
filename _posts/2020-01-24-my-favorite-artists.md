@@ -5,7 +5,7 @@ date: 2020-01-24 21:02:00 -0500
 category: blog
 author: Aaron
 author_twitter: shamshirz
-image: /assets/spotify.png
+image: /assets/spotify/spotify.png
 ---
 
 Sharing my recent Spotify favorites with Elm and AWS
