@@ -6,5 +6,5 @@ layout: home
 author_twitter: SylverStudios
 image: /assets/favicon-32x32.png
 # This will build a title like `page.title |  Sylver Studios`
-title: Indie Devs exploring ourselves through tech
+title: Indie Devs Exploring Ourselves Through Tech
 ---
