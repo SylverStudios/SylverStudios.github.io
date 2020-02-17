@@ -22,7 +22,7 @@ title_image: "https://sylverstudios.dev/assets/sylverbar100.png"
 
 email: sylverstudiosdev@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Sylver Studios is an indie game dev group based in Boston. We are friends that
+  An indie game dev group based in Boston. Sylver Studios' friends
   share this brand as a convenient place to co-publish fun toys.
 baseurl: "" # the subpath…how to `/s`
 url: "https://sylverstudios.dev"
@@ -51,6 +51,7 @@ theme: minima
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
