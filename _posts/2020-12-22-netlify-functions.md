@@ -72,7 +72,7 @@ What would be the best accomplishment for me?
 ## The Stuff
 Spotify gives us access to a very suitable API. The goal here is to have something call this API, handle authentication, and bring the results to our blog. Later, I use this goal to scope the work and build this PoC.
 <!-- Includes header, styling, & link to the Repo -->
-{% include spotifyArtists.html %}
+{% include spotifyArtistsV2.html %}
 
 
 ## Thanks
