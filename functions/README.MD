@@ -1,0 +1,1 @@
+Functions within this folder, or subfolders are deployed via Netlify as Lambdas
