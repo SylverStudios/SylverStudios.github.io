@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "description": "Netlify Lambda functions to communicate with 3rd party APIs",
   "private": true,
-  "main": "spotify.js",
+  "main": "functions/spotify.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
