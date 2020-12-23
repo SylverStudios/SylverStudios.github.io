@@ -1,4 +1,4 @@
-import fetch from "node-fetch";
+const fetch = require('node-fetch')
 
 const REFRESH_TOKEN = process.env.REFRESH_TOKEN
 const CLIENT_TOKEN = process.env.CLIENT_TOKEN
