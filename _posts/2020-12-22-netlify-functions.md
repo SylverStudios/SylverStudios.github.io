@@ -19,7 +19,7 @@ My hunch was that Netlify Functions would simplify getting a serverless function
 <!-- Includes header, styling, & link to the Repo -->
 {% include spotifyArtistsV2.html %}
 
-☝️ Embedded Elm -> Netlify function -> Spotify API
+☝️ Live! `Elm -> Netlify function -> Spotify API`
 
 ## Scoping the Project
 1. Learn Netlify functions and remove the AWS serverless boilerplate.
@@ -39,7 +39,6 @@ Netlify Functions can only be in Node or Go right now, so rewriting it and cutti
 
 [SylverStudios Github.io repo](https://github.com/SylverStudios/SylverStudios.github.io/pull/44)
 ```javascript
-…
 exports.handler = async (event, context) => {
   return getAccessToken()
     .then(result => { return getTopArtists(result.body) })
@@ -53,7 +52,6 @@ exports.handler = async (event, context) => {
     })
     .catch(error => ({ statusCode: 422, body: String(error) }))
 };
-…
 ```
 
 
