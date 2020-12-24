@@ -14,7 +14,6 @@ exports.handler = async (event, context) => {
       // Tell netlify to cache this response if possible
       success.headers = {
         'Cache-Control': 'max-age=86400, public',
-        'Access-Control-Allow-Origin': "*",
         'content-type': 'application/json'
       }
       return success
