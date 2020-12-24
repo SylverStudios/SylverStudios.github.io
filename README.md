@@ -1,13 +1,16 @@
 # The new and improved website!
-[SylverStudios.github.io](https://SylverStudios.github.io) & [Sylverstud.io](https://sylverstud.io) & [sylverstudios.dev](https://sylverstudios.dev)
+[sylverstudios.dev](https://sylverstudios.dev)
 
 The goal is to make this a safe and easy place to post anything we want. Games, apps, ideas, whatever. If you're unsure, make a draft and push a branch, it won't go live and everyone else can give feedback.
 
-## How's it work?
+## Deployment
 
+* [Sylverstudios.dev](https://sylverstudios.dev) Netlify deploys this from Master
+  * PRs are deployed via Netlify to temporary addresses as well
 * Github will build/deploy master to [SylverStudios.github.io](https://SylverStudios.github.io)
-* Heroku will build/deploy master to [Sylverstud.io](https://sylverstud.io)
-* Branches won't get deployed, and it doesn't push drafts live, so feel free to try things out.
+  * Netlify functions won't work here?
+* [Sylverstud.io](https://sylverstud.io)
+  * Do we still own this domain? We should redirect it
 
 ## How can I contribute?
 
@@ -67,10 +70,8 @@ Example: The `head.html` is copied from `Minima` our current theme, the only dif
 ### Analytics
 
 Auto included when we build for production: `JEKYLL_ENV=production jekyll build`
-Github Pages are adding these so far.
-
-
-- [] Is Netflify deploying this too?
+  * ✅ Github Pages are adding
+  * ✅ Netlify Pages include
 
 
 ## Debug live

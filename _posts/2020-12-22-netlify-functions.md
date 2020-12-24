@@ -1,80 +1,51 @@
 ---
 layout: post
-title: "A WOrking Title on Netlify Fxns"
+title: "Using Netlify Functions to connect to Spotify"
 date: 2020-12-22 21:02:00 -0500
 category: blog
 author: Aaron
 author_twitter: shamshirz
 image: /assets/spotify/spotify.png
 ---
-* Title
-* title image
 
-
-Sharing my recent Spotify favorites with Elm and AWS
+Revamping my [Spotify post]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %}) to use Netlify Functions.
 ![Spotify Logo]({{ "/assets/spotify/spotify.png" | relative_url }}){:class="excerpt-image"}
 
-## What
-Use Netlify Fxn to call Spotify API > Providing my own AWS API
-
-## Why
-* No need to setup API gateway
-* Can skip DynamoDB for key cache (need to prove)
-* Can simplify code & deployment by leaning on netlify
-
-## Potential Problems
-* Will I call the Spotify API too much?
-* Can request caching on Netlify's side remove the need for a DynamoDB
-
-## How
-Netlify Fxn
-  * Has `client_id` & `refresh_token` as environment variables (build time, not available to the client)
-  * Always creates a new `access_token`
-    * Downside to this, if we call it frequently we are doing extra work
-    * Can we cache the result so the netlify proxy can return the old result
-
-Client side call
-`Get /my/netlify/fxn`
-  Server Side Call
-  (lean on the cache, call lambda unless we already have a valid result)
-  From there, server side request to Spotify with creds
-
-
-things to prove
-  1. Can the existing AWS function be simplified to always refresh the access token and be put into a netlify function
-  2. Can the Netlify fxn cache be used to only return results sometimes'
-
-
-Things I need to know
-* Netlify - how does their proxy caching work
-* Netlify - fxns, how they work, add JS code
-* Spotify - might not need to change anything
-
-
-Prove
-  1. ✅ I can run a netlify FXN
-  2. ✅ I can cache that result so the fxn isn't run every time the page is viewed
-  3. ✅ That fxn can call Spotify and return the right results
-
-To Do
-  1. Update Elm UI to call new route (temp)
-    * New release on spotify-highlights UI repo
-  2. Deploy function with sylverstudios site
-  3. Add New Blog post
-  4. Update Elm UI to call final route (sylverstud.io domain)
-  5. Deprecate last post, replace live component with Photo
-
-
-What would be the best accomplishment for me?
-* New blog post - working view included
-* Update to Old Post
-
-## The Stuff
-Spotify gives us access to a very suitable API. The goal here is to have something call this API, handle authentication, and bring the results to our blog. Later, I use this goal to scope the work and build this PoC.
 <!-- Includes header, styling, & link to the Repo -->
 {% include spotifyArtistsV2.html %}
 
+<!--more-->
+[Netlify Functions](https://docs.netlify.com/functions/build-with-javascript/#unbundled-javascript-function-deploys) peaked my interest this year and I re-implemented an AWS serverless API to test them out! This blog is already hosted on Netlify and Functions seem like a simplified wrapper around AWS Lambda. The existing project is described in this post from Jan 2020, [AWS Serverless Spotify Post]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %}), where I setup Dynamo, API Gateway, Lambda, and IAM Permissions for a ~80 line Lambda.
 
-## Thanks
+My hunch was that Netlify Functions would reduce the steps to getting a serverless function deployed. In addition, one of the original problems was that Spotify provides a new refreshed token every hour, so I had setup DynamoDB to store that key. My hypothesis is that single Key Value store could be replaced by having Netlify cache the result of the lambda and only expire it once a day.
 
-## Resources
+
+## Scoping the Project
+1. Learn Netlify functions and remove the AWS serverless boilerplate.
+2. Re-architect the solution to not need a DB.
+3. I'd like to do the whole thing in a few days!
+
+
+### Cache Netlify Function Results
+The API token expired more frequently than the Spotify Data itself! I wanted to prove that Netlify would cache results so I would only need to execute the lambda once a day. If I could prove that, then the Lambda could always request a refreshed token and I wouldn't have to feel as bad about the API pressure I was putting on Spotify.
+
+Luckily, Netlify has a [great starter repo](https://github.com/netlify/functions) that you can fork and it deploys immediately. Here is a demo app proving that caching on the server works - [Netlify Cached Function Example](https://github.com/shamshirz/netlify-functions-example/blob/master/src/lambda/cached.js)
+
+![dev tools displays cached request age]({{ "/assets/spotify/cachedByNetlify.png" | relative_url }})
+
+### Call Spotify API
+Netlify Functions can only be in Node or Go right now, so rewriting it and cutting the code for storing the current token was the first step. It only took [about 50 lines](https://github.com/SylverStudios/SylverStudios.github.io/pull/44) and that was all Netlify needs to deploy a function! The learning curve for deploying did take some reading, but Netlify has a been working to make this easier and you can push [Unbundled Javascript Functions](https://docs.netlify.com/functions/build-with-javascript/#unbundled-javascript-function-deploys) for Netlify to zip and deploy. Which means the only artifact in my repo is the code executed in the lambda and a `package.json`.
+
+## Results
+
+When looking at the completed function, it's amazing to see how far serverless offerings have come in 1 year! Last year when working with the Serverless CLI and AWS directly, it was do-able, but there was a lot to manage and a lot of opportunity for error.
+
+This repo has the single file of code that's important to the app and that's it! Overall, the experience was really easy. There are a lot of different examples and docs out there and it's easy to find ones that are out of date, but the overall simplicity of what "serverless" means in terms of Netlify has been a real joy.
+
+
+### Resources
+* [Netlify Functions](https://docs.netlify.com/functions/build-with-javascript/#unbundled-javascript-function-deploys)
+* [AWS Serverless Spotify Post]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %})
+* [Netlify Example Functions Repo](https://github.com/netlify/functions)
+* [Blog Post PR w/ Netlify Function](https://github.com/SylverStudios/SylverStudios.github.io/pull/44)
+* [Elm code to display Spotify Data](https://github.com/SylverStudios/spotify-highlights/tree/master/ui)
