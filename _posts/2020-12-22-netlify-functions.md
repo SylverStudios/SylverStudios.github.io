@@ -9,15 +9,15 @@ image: /assets/spotify/spotify.png
 ---
 
 Revamping my [Spotify post]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %}) to use Netlify Functions.
-![Spotify Logo]({{ "/assets/spotify/spotify.png" | relative_url }}){:class="excerpt-image"}
-
-<!-- Includes header, styling, & link to the Repo -->
-{% include spotifyArtistsV2.html %}
+![Spotify Logo]({{ "/assets/spotify/netlify-icon.svg" | relative_url }}){:class="excerpt-image"}
 
 <!--more-->
 [Netlify Functions](https://docs.netlify.com/functions/build-with-javascript/#unbundled-javascript-function-deploys) peaked my interest this year and I re-implemented an AWS serverless API to test them out! This blog is already hosted on Netlify and Functions seem like a simplified wrapper around AWS Lambda. The existing project is described in this post from Jan 2020, [AWS Serverless Spotify Post]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %}), where I setup Dynamo, API Gateway, Lambda, and IAM Permissions for a ~80 line Lambda.
 
 My hunch was that Netlify Functions would reduce the steps to getting a serverless function deployed. In addition, one of the original problems was that Spotify provides a new refreshed token every hour, so I had setup DynamoDB to store that key. My hypothesis is that single Key Value store could be replaced by having Netlify cache the result of the lambda and only expire it once a day.
+
+<!-- Includes header, styling, & link to the Repo -->
+{% include spotifyArtistsV2.html %}
 
 
 ## Scoping the Project
