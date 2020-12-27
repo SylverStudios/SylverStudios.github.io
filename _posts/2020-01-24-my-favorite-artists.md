@@ -11,6 +11,8 @@ image: /assets/spotify/spotify.png
 Sharing my recent Spotify favorites with Elm and AWS
 ![Spotify Logo]({{ "/assets/spotify/spotify.png" | relative_url }}){:class="excerpt-image"}
 
+<!-- Update 12/2020 -->
+> UPDATE 12-27-20: This project was updated in [Using Netlify Functions & Spotify APIs]({{ site.baseurl }}{% post_url 2020-12-22-netlify-functions %}). The AWS Serverless request was replaced in this post with a screenshot of the original results.
 
 <!--more-->
 This year a friend and I shared past playlists as a way to catch up and realized they were a great way to journal. The best way to share that time and experience with each other was to listen to the playlists on our own and at our own pace. This was a surprising, no-pressure way to share myself and I wanted to explore it even more.
@@ -23,8 +25,8 @@ How can I share a snapshot of myself, without it becoming dated, and without it 
 > Get the current user’s top artists or tracks based on calculated affinity.
 
 Spotify gives us access to a very suitable API. The goal here is to have something call this API, handle authentication, and bring the results to our blog. Later, I use this goal to scope the work and build this PoC.
-<!-- Includes header, styling, & link to the Repo -->
-{% include spotifyArtists.html %}
+
+![Spotify Artists loaded from AWS Serverless stack]({{ "/assets/spotify/SpotifyAwsServerless.png" | relative_url }})
 
 
 ## How it Works
