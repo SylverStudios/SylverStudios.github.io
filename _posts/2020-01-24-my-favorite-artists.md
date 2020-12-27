@@ -12,7 +12,7 @@ Sharing my recent Spotify favorites with Elm and AWS
 ![Spotify Logo]({{ "/assets/spotify/spotify.png" | relative_url }}){:class="excerpt-image"}
 
 <!-- Update 12/2020 -->
-> UPDATE #1: This project was revamped to use Netlify Functions and the AWS Serverless request was replaced in this post with a screenshot of the original results. You can find the updated solution in this post: [Using Netlify Functions & Spotify API]({{ site.baseurl }}{% post_url 2020-12-22-netlify-functions %})
+> UPDATE 12-27-20: This project was updated in [Using Netlify Functions & Spotify APIs]({{ site.baseurl }}{% post_url 2020-12-22-netlify-functions %}). The AWS Serverless request was replaced in this post with a screenshot of the original results.
 
 <!--more-->
 This year a friend and I shared past playlists as a way to catch up and realized they were a great way to journal. The best way to share that time and experience with each other was to listen to the playlists on our own and at our own pace. This was a surprising, no-pressure way to share myself and I wanted to explore it even more.
