@@ -25,8 +25,7 @@ How can I share a snapshot of myself, without it becoming dated, and without it 
 > Get the current user’s top artists or tracks based on calculated affinity.
 
 Spotify gives us access to a very suitable API. The goal here is to have something call this API, handle authentication, and bring the results to our blog. Later, I use this goal to scope the work and build this PoC.
-<!-- Includes header, styling, & link to the Repo -->
-<!-- {% include spotifyArtists.html %} -->
+
 ![Spotify Artists loaded from AWS Serverless stack]({{ "/assets/spotify/SpotifyAwsServerless.png" | relative_url }})
 
 
