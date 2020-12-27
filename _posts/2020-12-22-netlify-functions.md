@@ -5,11 +5,11 @@ date: 2020-12-22 21:02:00 -0500
 category: blog
 author: Aaron
 author_twitter: shamshirz
-image: /assets/spotify/netlify-icon.svg
+image: /assets/spotify/netlify-full-logo-light
 ---
 
 Revamping my [Spotify post]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %}) to use Netlify Functions.
-![Spotify Logo]({{ "/assets/spotify/netlify-icon.svg" | relative_url }}){:class="excerpt-image"}
+![Spotify Logo]({{ "/assets/spotify/netlify-full-logo-light" | relative_url }}){:class="excerpt-image"}
 
 <!--more-->
 [Netlify Functions](https://docs.netlify.com/functions/build-with-javascript/#unbundled-javascript-function-deploys) piqued my interest this year and I re-implemented an AWS serverless API to test them out! The existing project is described in [this post from Jan 2020]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %}), where I set up Dynamo, API Gateway, Lambda, and IAM Permissions for a ~80 line Lambda.
