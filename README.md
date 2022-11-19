@@ -1,16 +1,17 @@
 # The new and improved website!
+
 [sylverstudios.dev](https://sylverstudios.dev)
 
 The goal is to make this a safe and easy place to post anything we want. Games, apps, ideas, whatever. If you're unsure, make a draft and push a branch, it won't go live and everyone else can give feedback.
 
 ## Deployment
 
-* [Sylverstudios.dev](https://sylverstudios.dev) Netlify deploys this from Master
-  * PRs are deployed via Netlify to temporary addresses as well
-* Github will build/deploy master to [SylverStudios.github.io](https://SylverStudios.github.io)
-  * Netlify functions won't work here?
-* [Sylverstud.io](https://sylverstud.io)
-  * Do we still own this domain? We should redirect it
+- [Sylverstudios.dev](https://sylverstudios.dev) Netlify deploys this from Master
+  - PRs are deployed via Netlify to temporary addresses as well
+- Github will build/deploy master to [SylverStudios.github.io](https://SylverStudios.github.io)
+  - Netlify functions won't work here?
+- [Sylverstud.io](https://sylverstud.io)
+  - Do we still own this domain? We should redirect it
 
 ## How can I contribute?
 
@@ -26,11 +27,13 @@ bundle exec jekyll serve --drafts
 Are you me? Have you not properly setup ruby on your old mcBook? Some of these steps will relate to that issue, ignore if not applicable.
 
 ### Ruby Setup
+
 We need `ruby` installed, at the correct version, to run `jekyll`.
 In order to easily chose our ruby version, we will first install the tool [`rbenv`](https://github.com/rbenv/rbenv#installation).
 (Important Note! You must complete all of the rbenv installation steps, including updating your bash_profile).
 
 After install `rbenv`, we will use it to set up the version of ruby required by jekyll, namely ruby 2.6.0:
+
 ```bash
 rbenv install 2.6.0
 # Should see output regarding Downloading and Installing ruby 2.6.0
@@ -41,7 +44,9 @@ ruby --version
 ```
 
 ### Jekyll Setup
+
 Next we will set up Jekyll's dependencies in this project specifically.
+
 ```bash
 cd to/the/project # top-level
 # install jekyll & bundler
@@ -52,6 +57,7 @@ bundle install
 
 Voila! At this point the environment should support everything we need to develop.
 You can verify this by running the main development command:
+
 ```bash
 # Run in dev mode, displays drafts
 bundle exec jekyll serve --drafts
@@ -70,16 +76,6 @@ Example: The `head.html` is copied from `Minima` our current theme, the only dif
 ### Analytics
 
 Auto included when we build for production: `JEKYLL_ENV=production jekyll build`
-  * ✅ Github Pages are adding
-  * ✅ Netlify Pages include
 
-
-## Debug live
-
-```
-heroku login
-heroku apps
-# big list
-heroku run bash -a <app_name_here>
-heroku logs -n 100 -t -a <app_name_here>
-```
+- ✅ Github Pages are adding
+- ✅ Netlify Pages include

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Fly.io and Phoenix"
-date: 2022-11-19 21:02:00 -0500
+date: 2022-11-18 21:02:00 -0500
 category: blog
 author: Aaron
 author_twitter: shamshirz
