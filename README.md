@@ -15,10 +15,10 @@ The goal is to make this a safe and easy place to post anything we want. Games, 
 
 ## How can I contribute?
 
-Open a PR, add a new `post` file (Post format: `YEAR-MONTH-DAY-title.MARKUP`). If the file is under drafts, it won't need the date. Run it locally to make sure everything is working. Pretty straight forward.
+Open a PR, add a new `post` file (Post format: `YEAR-MONTH-DAY-title.MARKUP`). If the file is under drafts, it won't need the date. Run it locally to make sure everything is working. Pretty straight forward. If you're using vscode or cursor, the dev container should handle everything for you
 
 ```bash
-bundle exec jekyll serve --drafts
+vscode ➜ /workspaces/SylverStudios.github.io (master) $ bundle exec jekyll serve --drafts
 ```
 
 <details><summary>Development Environment setup - Mac</summary>
