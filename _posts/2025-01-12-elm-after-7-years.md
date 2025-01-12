@@ -5,9 +5,9 @@ date:   2025-01-12 6:00:00 -0500
 categories: blog
 author: Aaron
 author_twitter: shamshirz
-image: /assets/elm/elm.webp
+image: /assets/elm/elmLogo.png
 ---
-My development perspective on using Elm, and when it will serve you. [![Elm-lang logo]({{ "/assets/elm/elm.webp" | relative_url }}){:class="excerpt-image"}](https://elm-lang.org/)
+My development perspective on using Elm, and when it will serve you. [![Elm-lang logo]({{ "/assets/elm/elmLogo.png" | relative_url }}){:class="excerpt-image"}](https://elm-lang.org/)
 
 **Note about Shamshirz**
 
