@@ -4,6 +4,10 @@
 
 The goal is to make this a safe and easy place to post anything we want. Games, apps, ideas, whatever. If you're unsure, make a draft and push a branch, it won't go live and everyone else can give feedback.
 
+## Prerelease Checklist
+
+- [ ] Social media meta looks good - [test here](https://tweethunter.io/tweetpik/twitter-card-validator)
+
 ## Deployment
 
 - [Sylverstudios.dev](https://sylverstudios.dev) Netlify deploys this from Master
