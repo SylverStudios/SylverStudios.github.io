@@ -3,31 +3,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  {%- seo -%}
   <link rel="stylesheet" href={{ "/assets/css/style.css" | relative_url }}>
+
+  <title>{{site.title | escape}}</title>
+  {% comment %} begin seo {% endcomment %}
+  {%- assign card-filename = "" -%}
+
+  {%- if page.image -%}
+  {%- assign card-filename = page.image | absolute_url -%}
+  {%- endif -%}
+
+  {%- if page.image == nil -%}
+  {%- assign card-filename = site.title_image | absolute_url -%}
+  {%- endif -%}
+
+  <meta name="twitter:site" content="@{{ site.twitter_username }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:creator" content="@{{ page.author_twitter }}">
+  <meta name="twitter:title" content="{{ page.title }}">
+  <meta name="twitter:image" content="{{ card-filename }}">
+  <meta property="og:image" content="{{ card-filename }}">
+  <meta property="og:description" content="{{ page.title }}" />
+  <meta property="og:image:type" content="image/png">
+  {% comment %} end seo {% endcomment %}
+
   {%- feed_meta -%}
   {%- if site.google_analytics -%}
   {%- include google-analytics.html -%}
   {%- endif -%}
-
-
-  <!-- Twitter cards -->
-  <meta name="twitter:site" content="@{{ site.twitter_username }}">
-  {% if page.author_twitter %}
-  <meta name="twitter:creator" content="@{{ page.author_twitter }}">
-  {% endif %}
-  <meta name="twitter:title" content="{{ page.title }}">
-
-  {% if page.image %}
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:image" content="{{ site.url }}{{ page.image }}">
-  <meta property="og:image" content="{{ site.url }}{{ page.image }}" />
-  {% else %}
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:image" content="{{ site.title_image }}">
-  <meta property="og:image" content="{{ site.title_image }}" />
-  {% endif %}
-  <!-- end of Twitter cards -->
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
