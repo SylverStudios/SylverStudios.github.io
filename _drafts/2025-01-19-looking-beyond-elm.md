@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Looking Beyond Elm: Why LiveView Is My Next Tool of Choice"
-date:   2025-01-20 12:00:00 -0500
+date:   2025-01-19 12:00:00 -0500
 categories: blog
 tags: [elixir, liveview, phoenix, elm]
 author: Aaron
