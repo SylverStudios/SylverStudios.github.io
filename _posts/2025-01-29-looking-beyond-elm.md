@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Looking Beyond Elm: Why LiveView Is My Next Tool of Choice"
-date:   2025-01-19 12:00:00 -0500
+date:   2025-01-29 12:00:00 -0500
 categories: blog
 tags: [elixir, liveview, phoenix, elm]
 author: Aaron
@@ -13,7 +13,7 @@ LiveView and why I'm excited to move forward. [![LiveView logo]({{ "/assets/phoe
 <!-- Ends the excerpt text, it includes the image -->
 
 
-This is a reflection on my [love letter to Elm]({% post_url 2025-01-12-elm-after-7-years %}), to make myself better understand why I'm ready to move forward. I've been watching [LiveView](https://hexdocs.pm/phoenix_live_view/welcome.html) for a long time and it's passed my threshold as an Elm holdout by becoming mature enough to depend on, easy to develop with, and a leader in showcasing the benefits of modern [SSR](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering). As my goals grow and change, I need my toolkit to as well. I'm looking forward at more experimentation and exploration with LiveView as the medium. **LiveView's simplified API, 2-way communication, and end-to-end UI testing makes it the best tool for modern use cases** and I'm stoked to see just how much there is to gain.
+This is a reflection on my [love letter to Elm]({% post_url 2025-01-12-elm-after-7-years %}), to make myself better understand why I'm ready to move forward. I've been watching [LiveView](https://hexdocs.pm/phoenix_live_view/welcome.html) for a long time and it's passed my threshold as an Elm holdout by becoming mature enough to depend on, easy to develop with, and a leader in showcasing the benefits of modern [SSR](https://nextjs.org/docs/pages/building-your-application/rendering/server-side-rendering). As my goals grow and change, I need my toolkit to as well. I'm looking forward at more experimentation and exploration with LiveView as the medium. My hypothesis is that **LiveView's simplified API, 2-way communication, and end-to-end UI testing makes it the best tool for modern use cases** and I'm stoked to see just how much there is to gain.
 
 I'm excited to push LiveView to explore its potential. The shift to SSR and a unified language for frontend and backend unlocks some incredible benefits. **By removing the separate frontend language and active development of the API layer, the [cognitive load](https://minds.md/zakirullin/cognitive) to create a product is dramatically reduced.** This removes hundreds of lines of code I've come to accept in the past and simplifies the mental model of data flow. These advantages are a result of comfortable SSR templating ([heex](https://hexdocs.pm/phoenix/components.html#heex)) and tight websocket integration, which make the client experience nearly indistinguishable from a traditional SPA. Seamless, real-time updates with server push allow SSR to compete directly with modern JS-driven SPAs. In Elixir, process-driven concurrency makes leveraging these benefits even easier. LiveView assigns an in-memory process to each connected client, allowing seamless communication by sending messages directly to these processes using Elixir's built-in primitives—no special DSL or complex logic required. These all reduce cognitive load and reduce code, which means fewer and faster decisions. Finally, this means faster implementation and better iteration speed.
 
