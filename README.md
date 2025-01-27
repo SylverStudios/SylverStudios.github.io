@@ -83,3 +83,9 @@ Auto included when we build for production: `JEKYLL_ENV=production jekyll build`
 
 - ✅ Github Pages are adding
 - ✅ Netlify Pages include
+
+
+## Notes to self
+* Seems like posts take roughly 10 days to actually make it live
+  * This is not writing, but between editing after reviews and distractions from "real life", that's what I can expect.
+  
