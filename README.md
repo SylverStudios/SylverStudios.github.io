@@ -64,7 +64,7 @@ You can verify this by running the main development command:
 
 ```bash
 # Run in dev mode, displays drafts
-bundle exec jekyll serve --drafts
+bundle exec jekyll serve --drafts --future
 ```
 
 </p>
