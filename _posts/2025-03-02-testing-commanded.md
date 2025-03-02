@@ -12,7 +12,7 @@ Wrapping my head around testing Event Sourced systems [![commanded logo]({{ "/as
 <!-- Ends the excerpt text, it includes the image -->
 
 
-This post is self documentation as I work through my thoughts on testing an Event Sourced System using `commanded`. Transitioning from a history of traditional CRUD to Event Sourcing is wild and involves a big change in thinking…_I think_.
+This post is self documentation as I work through my thoughts on testing an Event Sourced System using [`commanded`](https://github.com/commanded/commanded). Transitioning from a history of traditional CRUD to Event Sourcing is wild and involves a big change in thinking…_I think_.
 
 ## Testing
 Why do I need this? Because I started writing tests like normal, only to start seeing tons of connection and PID related errors. After much discovery and the  [Elixir Slack #commanded](https://elixir-lang.slack.com/archives/CCAB0AYTU) channel's input, I've started to grok it. I kind of like how structured it is 🙊
