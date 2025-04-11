@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  Coaching AI to Reach Its Potential
-date:   2025-03-16 7:00:00 -0500
+date:   2025-04-08 7:00:00 -0500
 categories: blog
 tags: [ai, cursor, claude-code, how-to]
 author: Aaron
