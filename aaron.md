@@ -13,6 +13,8 @@ Aaron is an adventurer of all things software. He came to Elixir from a Java and
 
 * GitHub: [shamshirz](https://github.com/shamshirz)
 * Twitter: [@shamshirzdev](https://twitter.com/shamshirzdev)
+* LinkedIn: [Aaron Votre](https://www.linkedin.com/in/aaron-votre/)
+* Email: [aaron@example.com](mailto:aaron@example.com)
 * Goodreads: [aaron](https://www.goodreads.com/user/show/51468140-aaron)
 * Twitch (rare): [shamshirz](https://www.twitch.tv/shamshirz)
 * ElixirConf: [Checkout my talk on GraphQL & Absinthe](https://elixirconf.com/2018/speakers/aaron-votre)

@@ -1,0 +1,53 @@
+{% if page.author %}
+<div class="author-contact">
+    <h3>Connect with {{ page.author }}</h3>
+    <p>
+        Have feedback or want to discuss this post? Feel free to reach out!
+    </p>
+    <ul class="author-links">
+        {% if page.author_twitter %}
+        <li><a href="https://twitter.com/{{ page.author_twitter }}" target="_blank">Twitter</a></li>
+        {% endif %}
+        <li><a href="https://www.linkedin.com/in/aaron-votre/" target="_blank">LinkedIn</a></li>
+        <li><a href="mailto:aaron@example.com">Email</a></li>
+        <li><a href="/about/aaron/">More about Aaron</a></li>
+    </ul>
+</div>
+
+<style>
+    .author-contact {
+        margin: 2em 0;
+        padding: 1.5em;
+        background: #f8f9fa;
+        border-radius: 8px;
+    }
+
+    .author-contact h3 {
+        margin-top: 0;
+        color: #333;
+    }
+
+    .author-links {
+        list-style: none;
+        padding: 0;
+        margin: 1em 0 0 0;
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+    }
+
+    .author-links li a {
+        display: inline-block;
+        padding: 0.5em 1em;
+        background: #007bff;
+        color: white;
+        text-decoration: none;
+        border-radius: 4px;
+        transition: background-color 0.2s;
+    }
+
+    .author-links li a:hover {
+        background: #0056b3;
+    }
+</style>
+{% endif %}
