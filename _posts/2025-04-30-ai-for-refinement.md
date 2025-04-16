@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Iterate and refine with the Cursor Agent
-date:   2025-04-11 7:00:00 -0500
+date:   2025-04-30 7:00:00 -0500
 categories: blog
 tags: [ai, cursor, ui, refactoring]
 author: Aaron
