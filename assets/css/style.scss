@@ -72,3 +72,21 @@
     font-style: normal;
   }
 }
+
+.callout {
+  padding-left: 20px;
+  margin: 15px 0;
+  font-size: 1.1em;
+  font-style: italic;
+  color: #333;
+  border-left: 3px solid #999;
+}
+
+.indent {
+  background-color: #F9F9F9;
+  border-left: 3px solid #E0E0E0;
+  padding: 10px 15px 10px 20px;
+  margin: 15px 0;
+  font-size: 0.95em;
+  color: #555;
+}
