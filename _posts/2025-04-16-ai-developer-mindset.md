@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "AI development Mindset: Coach"
-date:   2025-04-09 7:00:00 -0500
+date:   2025-04-16 7:00:00 -0500
 categories: blog
 tags: [ai, mindset, how-to]
 author: Aaron
@@ -63,4 +63,4 @@ If that example seems long, you're right. This makes a difference and it's why I
 AI shines with a clear, broad context, a strong feedback loop, and a well-defined goal. I talked about this as it related to Elixir in my last post [Elixir's Advantage in the Era of AI]({{ site.baseurl }}{% post_url 2025-03-15-elixir-ai %}). I've seen some great results so far and the mindset is what leads to creating the best prompts and the right context. I'm going to explore using Claude Code for scaffolding and Cursor for polish soon. Stay tuned!
 
 
-Praise the editors: [Sam Roberts](https://github.com/samgqroberts) 
+Praise the editors: [Sam Roberts](https://github.com/samgqroberts) & Dan Janowski
