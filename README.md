@@ -7,9 +7,10 @@ The goal is to make this a safe and easy place to post anything we want. Games, 
 ## Prerelease Checklist
 
 - [ ] Social media meta looks good - [test here](https://tweethunter.io/tweetpik/twitter-card-validator)
-= [ ] Distribute to [ElixirStatus](https://elixirstatus.com/)
-- [ ] Cross post on substack
+- [ ] Distribute to [ElixirStatus](https://elixirstatus.com/)
+- [ ] Distribute to Elixir Radar via <a href="mailto:hugo@elixir-radar.com">Hugo's Email</a></p>
 - [ ] Post in Elixir Slack
+- [ ] Cross post on substack
 
 ## Deployment
 
