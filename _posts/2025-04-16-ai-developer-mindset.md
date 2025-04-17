@@ -62,7 +62,9 @@ If that example seems long, you're right. This makes a difference, and it's why 
 
 AI shines with a clear, broad context, a strong feedback loop, and a well-defined goal. I talked about this as it related to Elixir in my last post [Elixir's Advantage in the Era of AI]({{ site.baseurl }}{% post_url 2025-03-15-elixir-ai %}). I've seen some great results so far, and the mindset is what leads to creating the best prompts and the proper context. I will explore using Claude Code for scaffolding and Cursor for polish soon. Stay tuned!
 
-I'm also experimenting with using Substack to provide a newsletter. Let me know if you have any thoughts, and subscribe to get these pushed directly to your HUD contact lenses. [Aaron on the Sylverstudios Substack](https://sylverstudios.substack.com/?r=1u7tgy&utm_campaign=pub-share-checklist)
+I'm also experimenting with using Substack to provide a newsletter. Let me know if you have any thoughts, and subscribe to get these pushed directly to your HUD contact lenses.
+
+## [Aaron on the Sylverstudios Substack](https://sylverstudios.substack.com/?r=1u7tgy&utm_campaign=pub-share-checklist)
 
 
 Praise the editors: [Sam Roberts](https://github.com/samgqroberts) & Dan Janowski
