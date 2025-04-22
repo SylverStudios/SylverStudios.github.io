@@ -1,7 +1,7 @@
 ---
 layout: post
 title: AI Architecture and Scaffolding with Claude Code
-date:   2025-04-23 7:00:00 -0500
+date:   2025-04-23 1:00:00 -0400
 categories: blog
 tags: [ai, claude, claude-code, architecture, tdd, tutorial]
 author: Aaron
