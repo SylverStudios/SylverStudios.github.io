@@ -12,7 +12,7 @@ image: /assets/anthropic-logo.jpeg
 I walk through using [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview) to plan and start projects.[![anthropic logo]({{ "/assets/anthropic-logo.jpeg" | relative_url }}){:class="excerpt-image" style="border-radius: 8px; width: 80px; height: auto;"}](https://www.anthropic.com/) {%- if page.tags -%}{% for tag in page.tags %}<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a> {% endfor %}{%- endif -%}
 <!-- Ends the excerpt text, it includes the image -->
 
-This is a follow-up to better explain my approach to using AI coding tools in [AI development Mindset: Coach]({{ site.baseurl }}{% post_url 2025-04-09-ai-developer-mindset %}). This is how I start projects that are big enough to warrant atleast a 15 minute planning session before starting. I have scripts that I use to handle the rote work described here, but it's really important to talk through (and experience) it first hand to help you build up your own tools. I found this article by Manuel Kießling, [Senior Developer Skills in the AI Age: Leveraging Experience for Better Results](https://manuel.kiessling.net/2025/03/31/how-seasoned-developers-can-achieve-great-results-with-ai-coding-agents/) really similar to how I see a lot of this work and wanted to show what it looks like for my work.
+This is a follow-up to better explain my approach to using AI coding tools in [AI development Mindset: Coach]({{ site.baseurl }}{% post_url 2025-04-16-ai-developer-mindset %}). This is how I start projects that are big enough to warrant atleast a 15 minute planning session before starting. I have scripts that I use to handle the rote work described here, but it's really important to talk through (and experience) it first hand to help you build up your own tools. I found this article by Manuel Kießling, [Senior Developer Skills in the AI Age: Leveraging Experience for Better Results](https://manuel.kiessling.net/2025/03/31/how-seasoned-developers-can-achieve-great-results-with-ai-coding-agents/) really similar to how I see a lot of this work and wanted to show what it looks like for my work.
 
 # The Prompt Template
 
@@ -39,7 +39,11 @@ If I already have architectural ideas, I include them. If not, I'll ask for thre
 
 # The Development Loop
 
-Once the plan looks good, I give it the go-ahead: "Start on milestone 1. Use TDD. Update the PLAN.md with progress. And always run the verify.sh script after changes to be sure everything is working." It's important to note that the biggest boost we are unlocking allows Claude Code to make changes, fix them, and continue on it's own until the whole plan is complete, running completely autonomously with no additional input from me for ~5-8 minutes. The plan needs to be clear and the [feedback script - verify.sh](https://gist.github.com/shamshirz/eb1dac86bc7238f228ed58d1fac5fba2#file-verify-sh), just all of our deterministic testing/linting/even dev server, is so fast and easy that CC can **self-iterate** accurately and with clear next steps.. This is the Critical Victory that I've seen from CC that Cursor can't match yet.
+Once the plan looks good, I give it the go-ahead.
+```
+Start on milestone 1. Use TDD. Update the PLAN.md with progress. And always run the verify.sh script after changes to be sure everything is working.
+```
+It's important to note that the biggest boost we are unlocking allows Claude Code to make changes, fix them, and continue on it's own until the whole plan is complete, running completely autonomously with no additional input from me for ~5-8 minutes. The plan needs to be clear and the [feedback script - verify.sh](https://gist.github.com/shamshirz/eb1dac86bc7238f228ed58d1fac5fba2#file-verify-sh), just all of our deterministic testing/linting/even dev server, is so fast and easy that CC can **self-iterate** accurately and with clear next steps.. This is the Critical Victory that I've seen from CC that Cursor can't match yet.
 
 When the first diff is ready, I treat it like a PR. I review each file and leave feedback in the prompt as a numbered list. I expect working, test-passing code after 1–2 rounds and hitting that or not is a reflection on my ability to prompt.
 ```
