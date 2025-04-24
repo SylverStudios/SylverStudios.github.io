@@ -12,7 +12,7 @@ image: /assets/cursor-logo.jpeg
 I walk through using [Cursor in Agent Mode](https://docs.cursor.com/chat/agent) to refine and polish work.[![cursor logo]({{ "/assets/cursor-logo.jpeg" | relative_url }}){:class="excerpt-image" style="border-radius: 8px; width: 80px; height: auto;"}](https://www.cursor.com/) {%- if page.tags -%}{% for tag in page.tags %}<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a> {% endfor %}{%- endif -%}
 <!-- Ends the excerpt text, it includes the image -->
 
-This is a follow-up to [AI Architecture and Scaffolding with Claude Code]({{ site.baseurl }}{% post_url 2025-04-10-ai-as-architect %}) in the [AI development Mindset: Coach]({{ site.baseurl }}{% post_url 2025-04-09-ai-developer-mindset %}) series. We continue from our scaffolding with [Claude Code]() to making refined changes, and for that I switch to Cursor. It's fast, visual, and great for polish. Let me show you how I use it for targeted refinement, UI updates, and test polishing.
+This is a follow-up to [AI Architecture and Scaffolding with Claude Code]({{ site.baseurl }}{% post_url 2025-04-10-ai-as-architect %}) in the [AI development Mindset: Coach]({{ site.baseurl }}{% post_url 2025-04-16-ai-developer-mindset %}) series. We continue from our scaffolding with [Claude Code]() to making refined changes, and for that I switch to Cursor. It's fast, visual, and great for polish. Let me show you how I use it for targeted refinement, UI updates, and test polishing.
 
 # UI Edits with Screenshots
 
