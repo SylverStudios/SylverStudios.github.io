@@ -55,7 +55,7 @@ When the first diff is ready, I treat it like a PR. I review each file and leave
 
 # Managing Changes
 
-I stage diffs as I go—if something's mostly right, I keep it but haven't committed yet. That way, I can trace each "chain of thought" to 1 commit, and incremental improvements of that commit are managed through staged diffs. Typically, I get 1–2 commits from this stage. Sometimes I don’t like the changes it makes, which is why I rely on staging to avoid losing anything useful. I drop the incoming changes, and provide the same review with the added context that it was wrong and I removed the changes. You can use anything to solve this, I just find the diff view of staged changes versus unstaged to be the easiest to compare.
+I stage diffs as I go—if something's mostly right, I keep it but haven't committed yet. That way, I can trace each "chain of thought" to 1 commit, and incremental improvements of that commit are managed through staged diffs. Typically, I get 1–2 commits from this stage. Sometimes I don't like the changes it makes, which is why I rely on staging to avoid losing anything useful. I drop the incoming changes, and provide the same review with the added context that it was wrong and I removed the changes. You can use anything to solve this, I just find the diff view of staged changes versus unstaged to be the easiest to compare.
 
 # When to Use Claude Code
 
@@ -70,5 +70,9 @@ For a typical feature, I budget:
 - 15m of self-review + polish
 
 The reward isn't just speed—it's focus. I get to spend more time making thoughtful decisions and typing boilerplate less. Claude Code takes minutes, not seconds, so I use that to explore a separate change in parallel, read docs, or continue designing the next change. The fundamental change is that I am able to keep my perspective on the level of architecture and code organization more, and implementation less. Next up, I'll walk through what I do after Claude Code, where I really like the Cursor Agent.
+
+<div class="substack-button" style="text-align: center; margin: 2em 0;">
+  <a href="https://sylverstudios.substack.com/?r=1u7tgy&utm_campaign=pub-share-checklist" class="button" style="display: inline-block; padding: 0.8em 1.5em; background-color: #FF6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: background-color 0.2s;">Visit Substack to Subscribe</a>
+</div>
 
 Praise the editor: [Sam Roberts](https://github.com/samgqroberts) 
