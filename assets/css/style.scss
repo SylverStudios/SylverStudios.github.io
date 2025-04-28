@@ -90,3 +90,37 @@
   font-size: 0.95em;
   color: #555;
 }
+
+.long-excerpt-image {
+  width: 90px;
+  height: 90px;
+  margin-bottom: 0.5em;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .long-excerpt-image {
+    width: 80px;
+    height: 80px;
+    margin: 0 0 0 20px;
+    float: right;
+  }
+}
+
+.example-image-container {
+  margin: 2rem 0;
+  padding: 1rem;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  background-color: #f6f8fa;
+  text-align: center;
+
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+}

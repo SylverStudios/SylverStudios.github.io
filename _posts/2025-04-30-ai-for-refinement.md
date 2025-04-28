@@ -9,10 +9,12 @@ author_twitter: shamshirz
 image: /assets/cursor-logo.jpeg
 ---
 
-I walk through using [Cursor in Agent Mode](https://docs.cursor.com/chat/agent) to refine and polish work.[![cursor logo]({{ "/assets/cursor-logo.jpeg" | relative_url }}){:class="excerpt-image" style="border-radius: 8px; width: 80px; height: auto;"}](https://www.cursor.com/) {%- if page.tags -%}{% for tag in page.tags %}<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a> {% endfor %}{%- endif -%}
+In this post, I'll show you how I use [Cursor Agent Mode](https://docs.cursor.com/chat/agent) to refine UI and polish tests — fast, visually, and interactively.[![cursor logo]({{ "/assets/cursor-logo.jpeg" | relative_url }}){:class="long-excerpt-image"}](https://www.cursor.com/) {%- if page.tags -%}{% for tag in page.tags %}<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a> {% endfor %}{%- endif -%}
+
 <!-- Ends the excerpt text, it includes the image -->
 
-This is a follow-up to [AI Architecture and Scaffolding with Claude Code]({{ site.baseurl }}{% post_url 2025-04-10-ai-as-architect %}) in the [AI development Mindset: Coach]({{ site.baseurl }}{% post_url 2025-04-16-ai-developer-mindset %}) series. We continue from our scaffolding with [Claude Code]() to making refined changes, and for that I switch to Cursor. It's fast, visual, and great for polish. Let me show you how I use it for targeted refinement, UI updates, and test polishing.
+
+_It's a natural follow-up to our scaffolding with Claude Code, and a powerful tool for targeted improvements. Check out [AI Architecture and Scaffolding with Claude Code]({{ site.baseurl }}{% post_url 2025-04-23-ai-as-architect %}) in the [AI development Mindset: Coach]({{ site.baseurl }}{% post_url 2025-04-16-ai-developer-mindset %}) series. We continue from our scaffolding the project with help from [Claude Code](https://docs.anthropic.com/en/docs/agents-and-tools/claude-code/overview)._
 
 # UI Edits with Screenshots
 
@@ -24,14 +26,18 @@ Cursor's multi-modal capabilities are extremely undervalued. Screenshots help yo
    > "Make the app look more like the design. Flatten the form header, move the input to the left, and use the brand color for the background."
 
 I iterate with more screenshots and feedback:
-> "This is what the app looks like after that change. Compare again and align the button with the title, and remove the top padding."
+
+{: .example-image-container }
+![Cursor Agent Example with this blog posts styling issues]({{ "/assets/cursor-image-agent-example.png" | relative_url }})
+
 
 # Refactoring and Test Updates
 
 Cursor's also great for test updates and refactoring. I often ask:
 > "Make @this_test.exs work like @my_gold_standard_test.exs. Share test setup. Reduce file length, keep coverage."
 
-Context can be especially valuable here, I often find Cursor's agent turning to Elixir testing with the `Mox` library despite not using it. Cursor has it's own system for specific context injection through [Cursor Rules](https://docs.cursor.com/context/rules-for-ai) to address things like that once and for all! If you're interested in getting real deep on Cursor Rules, I found this article really impactful - [You are using Cursor AI incorrectly...](https://ghuntley.com/stdlib/) and a seperate user's [implementation example](https://ihorkatkov.github.io/blog/2025/from-skeptic-to-ai-believer/).
+Just like UI edits, focused prompts and examples help.
+When context matters (e.g., not using `Mox` in Elixir tests), [Cursor Rules](https://docs.cursor.com/context/rules-for-ai) let you inject project-specific instructions. If you want a deep dive, this article ([You are using Cursor AI incorrectly...](https://ghuntley.com/stdlib/)) and [this case study]((https://ihorkatkov.github.io/blog/2025/from-skeptic-to-ai-believer/)) were really impactful to me.
 
 # The Review Process
 
@@ -39,7 +45,7 @@ As with Claude Code, I review each diff like a PR. Feedback goes directly into t
 
 # Knowing When to Stop
 
-Eventually, you'll hit the wall: if the change is small, tedious, or personal-style-based, stop asking AI and do it yourself. There are diminishing returns like Claude Code. Cursor is much faster, but I've annecdotally had it get stuck in more hopeless change loops. More specific changes need more description and start changing fewer and fewer lines, you will cross a point where you need to type more than the the changes that you know how to code.
+Eventually, you'll hit the wall: if the change is small, tedious, or personal-style-based, stop asking AI and do it yourself. There are diminishing returns as code changes get smaller. More specific changes need more description and start changing fewer and fewer lines, you will cross a point where you need to type more than the the changes that you know how to code.
 
 {: .callout }
 > Stop when your explanations are getting longer and changes are getting smaller.
