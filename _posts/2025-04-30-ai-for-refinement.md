@@ -71,4 +71,8 @@ Eventually, you'll hit the wall: if the change is small, tedious, or personal-st
 
 Cursor shines when you need to turn good-enough code into nearly-production-ready polish—without writing every line yourself. It's uniquely powerful for UI work with images. and test refinement for UI, where visual context and pattern matching are key. If you liked this series, send word! I'm excited to share more if it's valuable to folks out there (or future me as well).
 
+<div class="substack-button" style="text-align: center; margin: 2em 0;">
+  <a href="https://sylverstudios.substack.com/?r=1u7tgy&utm_campaign=pub-share-checklist" class="button" style="display: inline-block; padding: 0.8em 1.5em; background-color: #FF6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: background-color 0.2s;">Visit Substack to Subscribe</a>
+</div>
+
 Praise the editor: [Sam Roberts](https://github.com/samgqroberts) 
