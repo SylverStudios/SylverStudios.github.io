@@ -32,4 +32,4 @@ gem "wdm", "~> 0.1.0" if Gem.win_platform?
 
 gem "rack-jekyll"
 
-ruby "2.6.2"
+ruby "2.7.2"
