@@ -6,6 +6,7 @@ The goal is to make this a safe and easy place to post anything we want. Games, 
 
 ## Prerelease Checklist
 
+- [ ] Optimize Images - https://squoosh.app/
 - [ ] The post has a clear objective - [Write Posts Developers will read](https://refactoringenglish.com/chapters/write-blog-posts-developers-read/)
 - [ ] Social media meta looks good - [test here](https://tweethunter.io/tweetpik/twitter-card-validator)
 - [ ] Distribute to [ElixirStatus](https://elixirstatus.com/)
