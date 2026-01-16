@@ -1,32 +1,58 @@
 ---
-layout: page
+layout: default
 title: "Post Archive"
 permalink: /archive.html
 ---
-<div>
-  Search through all of my posts by tag!
-</div> </br>
+<div class="py-8 sm:py-12">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6">
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-surface-900 tracking-tight mb-3">
+        Post Archive
+      </h1>
+      <p class="text-surface-600">
+        Browse all posts by tag.
+      </p>
+    </header>
 
-<div id="tags-list">
-  {% for tag in site.tags %}
-  {% assign tag_name = tag | first %}
-  {% assign tag_name_pretty = tag_name | replace: "_", " " | capitalize %}
-  <div class="tag-list">
-    <div id="#{{ tag_name | slugize }}"></div>
-    <h3 class="post-list-heading line-bottom"> In #{{ tag_name }}: </h3>
-    <a name="{{ tag_name | slugize }}"></a>
-    <ul class="post-list post-list-narrow">
-      {% for post in site.tags[tag_name] %}
-      <li>
-        {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
-        <b>
-          <a href="{{ post.url | relative_url }}">
-            {{ post.title | escape }}
+    <!-- Tag quick links -->
+    <nav class="mb-8 pb-8 border-b border-surface-200">
+      <div class="flex flex-wrap gap-2">
+        {% for tag in site.tags %}
+          {% assign tag_name = tag | first %}
+          <a href="#{{ tag_name | slugify }}"
+             class="tag-pill hover:bg-accent-100 hover:text-accent-700">
+            #{{ tag_name }}
+            <span class="ml-1 text-surface-400">({{ tag[1].size }})</span>
           </a>
-        </b> - <i>{{ post.date | date: date_format }}</i>
-      </li>
+        {% endfor %}
+      </div>
+    </nav>
+
+    <!-- Posts by tag -->
+    <div class="space-y-10">
+      {% for tag in site.tags %}
+        {% assign tag_name = tag | first %}
+        <section id="{{ tag_name | slugify }}" class="scroll-mt-20">
+          <h2 class="text-lg font-semibold text-surface-900 mb-4 flex items-center gap-2">
+            <span class="text-accent-600">#</span>{{ tag_name }}
+          </h2>
+
+          <ul class="space-y-3">
+            {% for post in site.tags[tag_name] %}
+              <li class="flex flex-col sm:flex-row sm:items-baseline gap-1 sm:gap-4">
+                {%- assign date_format = site.minima.date_format | default: "%b %-d, %Y" -%}
+                <time class="text-sm text-surface-400 whitespace-nowrap sm:w-28 flex-shrink-0" datetime="{{ post.date | date_to_xmlschema }}">
+                  {{ post.date | date: date_format }}
+                </time>
+                <a href="{{ post.url | relative_url }}"
+                   class="font-medium text-surface-700 hover:text-accent-600 transition-colors">
+                  {{ post.title | escape }}
+                </a>
+              </li>
+            {% endfor %}
+          </ul>
+        </section>
       {% endfor %}
-    </ul>
+    </div>
   </div>
-  {% endfor %}
 </div>

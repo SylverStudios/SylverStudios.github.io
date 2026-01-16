@@ -1,0 +1,122 @@
+name: Screenshot Blog Posts
+
+on:
+  pull_request:
+    paths:
+      - '_posts/**'
+    types: [opened, synchronize, reopened]
+
+jobs:
+  screenshot-posts:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0  # Needed to get full history for diff
+
+    - name: Setup Ruby
+      uses: ruby/setup-ruby@v1
+      with:
+        ruby-version: '3.2'
+        bundler-cache: true
+
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: '18'
+        cache: 'npm'
+
+    - name: Install dependencies
+      run: |
+        npm install
+        npx playwright install --with-deps
+
+    - name: Get modified posts
+      id: modified-posts
+      run: |
+        # Get list of modified files in _posts directory
+        MODIFIED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.event.pull_request.head.sha }} | grep '^_posts/' | tr '\n' ',' | sed 's/,$//')
+        echo "MODIFIED_FILES=$MODIFIED_FILES" >> $GITHUB_ENV
+        echo "Modified files: $MODIFIED_FILES"
+
+    - name: Build Jekyll site
+      run: |
+        bundle exec jekyll build --destination _site
+        # Start Jekyll server in background
+        bundle exec jekyll serve --detach --port 4000 --host 0.0.0.0
+
+    - name: Wait for server
+      run: |
+        # Wait for server to be ready
+        timeout 30 bash -c 'until curl -f http://localhost:4000 > /dev/null 2>&1; do sleep 1; done'
+
+    - name: Take screenshots
+      run: |
+        export JEKYLL_URL="http://localhost:4000"
+        export MODIFIED_FILES="$MODIFIED_FILES"
+        npm run screenshot
+
+    - name: Upload screenshots as artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: post-screenshots
+        path: screenshots/
+        retention-days: 30
+
+    - name: Comment on PR with screenshots
+      if: success()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          const fs = require('fs');
+          const path = require('path');
+          
+          // Read screenshots list
+          const screenshotsFile = 'screenshots/screenshots.txt';
+          if (!fs.existsSync(screenshotsFile)) {
+            console.log('No screenshots generated');
+            return;
+          }
+          
+          const screenshots = fs.readFileSync(screenshotsFile, 'utf8')
+            .split('\n')
+            .filter(line => line.trim());
+          
+          if (screenshots.length === 0) {
+            console.log('No screenshots found');
+            return;
+          }
+          
+          // Create comment with screenshot links
+          let comment = '## 📸 Blog Post Screenshots\n\n';
+          comment += 'Screenshots of the modified blog posts:\n\n';
+          
+          for (const screenshotPath of screenshots) {
+            const filename = path.basename(screenshotPath);
+            const postName = filename.replace('.png', '').replace(/_/g, '/');
+            comment += `### ${postName}\n`;
+            comment += `![${postName}](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId}/artifacts)\n\n`;
+          }
+          
+          comment += '> Screenshots are available as artifacts in this workflow run.';
+          
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: comment
+          });
+
+    - name: Comment on PR with error
+      if: failure()
+      uses: actions/github-script@v7
+      with:
+        script: |
+          github.rest.issues.createComment({
+            issue_number: context.issue.number,
+            owner: context.repo.owner,
+            repo: context.repo.repo,
+            body: '❌ Failed to generate screenshots for the modified blog posts. Check the workflow logs for details.'
+          }); 

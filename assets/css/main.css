@@ -1,0 +1,150 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Inter font (optional - system fonts work fine too) */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* JetBrains Mono for code */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500&display=swap');
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+
+  body {
+    @apply antialiased;
+  }
+
+  /* Focus visible for keyboard navigation */
+  a:focus-visible,
+  button:focus-visible {
+    @apply outline-none ring-2 ring-accent-500 ring-offset-2 rounded;
+  }
+}
+
+@layer components {
+  /* Tag pills for post metadata */
+  .tag-pill {
+    @apply inline-flex items-center px-2 py-0.5 text-xs font-medium rounded-full;
+    @apply bg-surface-100 text-surface-600 hover:bg-surface-200;
+    @apply transition-colors duration-150;
+  }
+
+  .tag-pill:hover {
+    @apply text-accent-700;
+  }
+
+  /* Note/callout boxes */
+  .note {
+    @apply bg-accent-50 border border-accent-200 rounded-lg p-4 my-4;
+    @apply text-accent-800;
+  }
+
+  .note blockquote {
+    @apply border-none m-0 p-0 not-italic;
+  }
+
+  .callout {
+    @apply pl-4 my-4 text-lg italic text-surface-700 border-l-4 border-surface-400;
+  }
+
+  .indent {
+    @apply bg-surface-50 border-l-4 border-surface-200 p-4 my-4 text-sm text-surface-600;
+  }
+
+  /* Post card for homepage */
+  .post-card {
+    @apply block p-4 -mx-4 rounded-lg;
+    @apply hover:bg-surface-50 transition-colors duration-150;
+  }
+
+  /* Game card */
+  .game-card {
+    @apply block p-6 rounded-xl border border-surface-200 bg-white;
+    @apply hover:border-accent-300 hover:shadow-md;
+    @apply transition-all duration-200;
+  }
+
+  /* Focus ring utility */
+  .focus-ring {
+    @apply focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2;
+  }
+}
+
+/* Preserve some existing utilities for backwards compatibility */
+@layer utilities {
+  .float-right-plz {
+    @apply float-right;
+  }
+
+  .centered {
+    @apply flex justify-center;
+  }
+
+  .webgl-content {
+    @apply select-none;
+  }
+}
+
+/* Code block styling (Rouge syntax highlighter) */
+.highlighter-rouge {
+  @apply my-4;
+}
+
+.highlight {
+  @apply rounded-lg overflow-x-auto;
+}
+
+.highlight pre {
+  @apply p-4 m-0 text-sm leading-relaxed;
+  @apply bg-surface-800 text-surface-100;
+}
+
+/* Inline code in prose handled by typography plugin */
+
+/* Image utilities */
+.excerpt-image {
+  @apply h-20 my-2;
+}
+
+@screen md {
+  .excerpt-image {
+    @apply float-right -mt-16 ml-4;
+  }
+}
+
+.long-excerpt-image {
+  @apply w-24 h-24 mb-2 rounded-lg shadow-sm block;
+}
+
+@screen md {
+  .long-excerpt-image {
+    @apply w-20 h-20 m-0 ml-5 float-right;
+  }
+}
+
+.about-image {
+  @apply h-48;
+}
+
+.aaron-page-image {
+  @apply float-right h-48;
+}
+
+.image-with-quote {
+  @apply flex flex-col md:flex-row justify-evenly items-center gap-4;
+}
+
+.image-with-quote blockquote {
+  @apply h-auto flex-1;
+}
+
+.example-image-container {
+  @apply my-8 p-4 border border-surface-200 rounded-lg bg-surface-50 text-center;
+}
+
+.example-image-container img {
+  @apply max-w-full h-auto block mx-auto;
+}

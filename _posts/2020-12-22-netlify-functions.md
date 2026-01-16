@@ -5,7 +5,7 @@ date: 2020-12-22 21:02:00 -0500
 category: blog
 author: Aaron
 author_twitter: shamshirz
-image: /assets/spotify/netlify-full-logo-light.png
+image: /assets/spotify/netlify-icon.svg
 ---
 
 Revamping my [Spotify post]({{ site.baseurl }}{% post_url 2020-01-24-my-favorite-artists %}) to use Netlify Functions.
