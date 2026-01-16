@@ -1,15 +1,31 @@
 {
-  "name": "spotify-lambda",
+  "name": "sylver-studios-blog",
   "version": "0.1.0",
-  "description": "Netlify Lambda functions to communicate with 3rd party APIs",
+  "description": "Sylver Studios blog with automated screenshot generation",
   "private": true,
   "main": "functions/spotify.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "install-playwright": "npx playwright install",
+    "screenshot": "node scripts/screenshot.js",
+    "test-screenshot": "node scripts/test-screenshot.js",
+    "css:build": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/site.css --minify",
+    "css:watch": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/site.css --watch",
+    "jekyll:build": "bundle exec jekyll build",
+    "jekyll:serve": "bundle exec jekyll serve --drafts --livereload",
+    "build": "npm run css:build && npm run jekyll:build",
+    "dev": "npm run css:watch & npm run jekyll:serve"
   },
   "author": "shamshirz",
   "license": "MIT",
   "dependencies": {
     "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@tailwindcss/typography": "^0.5.10",
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "tailwindcss": "^3.4.0"
   }
 }

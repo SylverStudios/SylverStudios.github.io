@@ -1,34 +1,43 @@
-<!doctype html>
-
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   {%- seo -%}
 
-  <link rel="stylesheet" href={{ "/assets/css/style.css" | relative_url }}>
+  <!-- TMM uses Bootstrap from its own CSS, don't load Tailwind -->
+  <link rel="stylesheet" href="{{ '/assets/tmm/tmm.css' | relative_url }}">
 
   {%- feed_meta -%}
+
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
-  {%- include google-analytics.html -%}
+    {%- include google-analytics.html -%}
   {%- endif -%}
-  <link rel="
-    shortcut icon" type="image/png" href={{ "/assets/favicon.png" | relative_url }}>
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
 </head>
 
 <body>
+  <!-- Simple header for game pages - styled with Bootstrap from tmm.css -->
+  <nav class="navbar navbar-default">
+    <div class="container">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="{{ '/' | relative_url }}">{{ site.title | escape }}</a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li><a href="{{ '/games/' | relative_url }}">Games</a></li>
+        <li><a href="{{ '/about/' | relative_url }}">About</a></li>
+      </ul>
+    </div>
+  </nav>
 
-  {%- include header.html -%}
-
-  <main class="
-    page-content" aria-label="Content">
+  <main>
     {{ content }}
   </main>
-
-  {%- include footer.html -%}
-
 </body>
-
 </html>

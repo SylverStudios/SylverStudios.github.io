@@ -1,0 +1,14 @@
+[build]
+  command = "npm run build"
+  publish = "_site"
+
+[build.environment]
+  JEKYLL_ENV = "production"
+  NODE_VERSION = "18"
+  RUBY_VERSION = "2.7.2"
+
+# Redirects for any old URL patterns if needed
+# [[redirects]]
+#   from = "/old-path"
+#   to = "/new-path"
+#   status = 301

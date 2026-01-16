@@ -1,0 +1,60 @@
+<header class="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-surface-200">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <nav class="flex items-center justify-between h-16" aria-label="Main navigation">
+      <!-- Logo/Site Title -->
+      <a href="{{ '/' | relative_url }}" class="flex items-center gap-2 font-semibold text-lg text-surface-900 hover:text-accent-600 transition-colors">
+        <img src="{{ '/assets/sylverbar100.png' | relative_url }}" alt="" class="h-8 w-8 rounded">
+        <span class="hidden sm:inline">{{ site.title | escape }}</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-1">
+        {%- for path in site.header_pages -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <a href="{{ my_page.url | relative_url }}"
+               class="px-4 py-2 text-sm font-medium text-surface-600 hover:text-accent-600 hover:bg-surface-50 rounded-lg transition-colors {% if page.url == my_page.url %}text-accent-600 bg-surface-50{% endif %}">
+              {{ my_page.title | escape }}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+        <a href="{{ '/archive.html' | relative_url }}"
+           class="px-4 py-2 text-sm font-medium text-surface-600 hover:text-accent-600 hover:bg-surface-50 rounded-lg transition-colors {% if page.url == '/archive.html' %}text-accent-600 bg-surface-50{% endif %}">
+          Archive
+        </a>
+      </div>
+
+      <!-- Mobile menu button -->
+      <button type="button"
+              class="md:hidden p-2 text-surface-600 hover:text-surface-900 hover:bg-surface-100 rounded-lg transition-colors"
+              aria-controls="mobile-menu"
+              aria-expanded="false"
+              onclick="document.getElementById('mobile-menu').classList.toggle('hidden'); this.setAttribute('aria-expanded', this.getAttribute('aria-expanded') === 'false' ? 'true' : 'false');">
+        <span class="sr-only">Open main menu</span>
+        <!-- Hamburger icon -->
+        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+      </button>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div id="mobile-menu" class="hidden md:hidden pb-4">
+      <div class="flex flex-col gap-1">
+        {%- for path in site.header_pages -%}
+          {%- assign my_page = site.pages | where: "path", path | first -%}
+          {%- if my_page.title -%}
+            <a href="{{ my_page.url | relative_url }}"
+               class="px-4 py-3 text-base font-medium text-surface-600 hover:text-accent-600 hover:bg-surface-50 rounded-lg transition-colors {% if page.url == my_page.url %}text-accent-600 bg-surface-50{% endif %}">
+              {{ my_page.title | escape }}
+            </a>
+          {%- endif -%}
+        {%- endfor -%}
+        <a href="{{ '/archive.html' | relative_url }}"
+           class="px-4 py-3 text-base font-medium text-surface-600 hover:text-accent-600 hover:bg-surface-50 rounded-lg transition-colors {% if page.url == '/archive.html' %}text-accent-600 bg-surface-50{% endif %}">
+          Archive
+        </a>
+      </div>
+    </div>
+  </div>
+</header>

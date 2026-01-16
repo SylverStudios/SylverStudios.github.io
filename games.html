@@ -1,13 +1,48 @@
 ---
-layout: page
+layout: default
 title: Games
 permalink: /games/
 ---
+<div class="py-8 sm:py-12">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
+    <header class="mb-8">
+      <h1 class="text-3xl sm:text-4xl font-bold text-surface-900 tracking-tight mb-3">
+        Games
+      </h1>
+      <p class="text-lg text-surface-600">
+        We have a couple star games that have yet to go viral (weird amirite?). Check them out!
+      </p>
+    </header>
 
-<p>
-    We have a couple star games that have yet to go viral (weird amirite?), checkem out here!
-</p>
+    <div class="grid gap-4 sm:grid-cols-2">
+      {% for post in site.categories.games %}
+        <a href="{{ post.url | relative_url }}" class="game-card group">
+          <div class="flex items-start justify-between gap-4">
+            <div class="flex-1 min-w-0">
+              <h2 class="font-semibold text-surface-900 group-hover:text-accent-600 transition-colors">
+                {{ post.title | escape }}
+              </h2>
+              {%- if post.excerpt -%}
+                <p class="mt-2 text-sm text-surface-600 line-clamp-2">
+                  {{ post.excerpt | strip_html | truncate: 120 }}
+                </p>
+              {%- endif -%}
+            </div>
+          </div>
 
-{% for post in site.categories.games %}
-<li><span>{{ post.date | date_to_string }}</span> &nbsp; <a href="{{ post.url }}">{{ post.title }}</a></li>
-{% endfor %}
+          <div class="mt-4 flex items-center justify-between">
+            <time class="text-xs text-surface-400" datetime="{{ post.date | date_to_xmlschema }}">
+              {{ post.date | date: "%b %Y" }}
+            </time>
+            <span class="inline-flex items-center gap-1 text-sm font-medium text-accent-600 group-hover:text-accent-700">
+              Play
+              <svg class="w-4 h-4 transition-transform group-hover:translate-x-0.5" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3" />
+              </svg>
+            </span>
+          </div>
+        </a>
+      {% endfor %}
+    </div>
+  </div>
+</div>

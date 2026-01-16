@@ -1,46 +1,15 @@
-<!DOCTYPE html>
+---
+layout: default
+---
+<!-- Unity WebGL scripts -->
+<script src="{{ '/assets/unity/ferryman/TemplateData/UnityProgress.js' | relative_url }}"></script>
+<script src="{{ '/assets/unity/ferryman/Build/UnityLoader.js' | relative_url }}"></script>
+<script>
+  var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl }}/assets/unity/{{ page.unity_dir }}/Build/WebGlBuild1.json", { onProgress: UnityProgress });
+</script>
 
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  {%- seo -%}
-
-  <link rel="stylesheet" href={{ "/assets/css/style.css" | relative_url }}>
-
-  {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-  {%- include google-analytics.html -%}
-  {%- endif -%}
-  <link rel="shortcut icon" type="image/png" href={{ "/assets/favicon.png" | relative_url }}>
-
-  <!-- The unity special sauce -->
-  <script src={{ "/assets/unity/ferryman/TemplateData/UnityProgress.js" | relative_url }}></script>
-  <script src={{ "/assets/unity/ferryman/Build/UnityLoader.js" | relative_url }}></script>
-  <script>
-    var gameInstance = UnityLoader.instantiate("gameContainer", "{{ site.baseurl}}/assets/unity/{{page.unity_dir}}/Build/WebGlBuild1.json", { onProgress: UnityProgress });
-  </script>
-
-
-  <!-- Next step, abstract the unity directory -->
-  <!-- <script src="{{ site.baseurl }}/assets/unity/{{page.unity_dir}}/TemplateData/UnityProgress.js"></script>   -->
-
-
-</head>
-
-<body>
-
-  {%- include header.html -%}
-
-  <main class="
-    page-content" aria-label="Content">
+<div class="py-8 sm:py-12">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6">
     {{ content }}
-  </main>
-
-  {%- include footer.html -%}
-
-</body>
-
-</html>
+  </div>
+</div>
