@@ -25,21 +25,34 @@ layout: default
       <section>
         <h2 class="text-xl font-semibold text-surface-900 mb-6">Recent Posts</h2>
 
-        <div class="space-y-1">
+        <div class="space-y-2">
           {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
           {%- for post in site.posts limit:15 -%}
             <article class="post-card group">
-              <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-2">
+              <a href="{{ post.url | relative_url }}" class="flex gap-4 hover:no-underline">
+                <!-- Cover image -->
+                {%- if post.image -%}
+                  <div class="flex-shrink-0">
+                    <img src="{{ post.image | relative_url }}"
+                         alt=""
+                         class="w-16 h-16 sm:w-20 sm:h-20 object-cover rounded-lg bg-surface-100">
+                  </div>
+                {%- endif -%}
+
+                <!-- Content -->
                 <div class="flex-1 min-w-0">
-                  <h3 class="font-medium text-surface-900 group-hover:text-accent-600 transition-colors">
-                    <a href="{{ post.url | relative_url }}" class="hover:no-underline">
+                  <div class="flex flex-col sm:flex-row sm:items-start sm:justify-between gap-1">
+                    <h3 class="font-medium text-surface-900 group-hover:text-accent-600 transition-colors">
                       {{ post.title | escape }}
-                    </a>
-                  </h3>
+                    </h3>
+                    <time class="text-sm text-surface-400 whitespace-nowrap" datetime="{{ post.date | date_to_xmlschema }}">
+                      {{ post.date | date: date_format }}
+                    </time>
+                  </div>
 
                   {%- if site.show_excerpts and post.excerpt -%}
                     <p class="mt-1 text-sm text-surface-600 line-clamp-2">
-                      {{ post.excerpt | strip_html | truncate: 160 }}
+                      {{ post.excerpt | strip_html | truncate: 140 }}
                     </p>
                   {%- endif -%}
 
@@ -51,11 +64,7 @@ layout: default
                     </div>
                   {%- endif -%}
                 </div>
-
-                <time class="text-sm text-surface-400 whitespace-nowrap" datetime="{{ post.date | date_to_xmlschema }}">
-                  {{ post.date | date: date_format }}
-                </time>
-              </div>
+              </a>
             </article>
           {%- endfor -%}
         </div>
