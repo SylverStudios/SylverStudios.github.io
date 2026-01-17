@@ -6,3 +6,10 @@ _site
 vendor/bundle
 .bundle
 yarn.lock
+
+# Generated CSS (built by Tailwind during deploy)
+assets/css/site.css
+
+# Dev artifacts
+request.json
+screenshots/

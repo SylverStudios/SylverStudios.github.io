@@ -60,6 +60,27 @@
     @apply hover:bg-surface-50 transition-colors duration-150;
   }
 
+  /* Ancient post card - for posts older than 2 years */
+  .post-card-ancient {
+    @apply relative overflow-hidden;
+  }
+
+  .post-card-ancient::before {
+    content: '';
+    @apply absolute w-20 h-20 sm:w-24 sm:h-24 pointer-events-none;
+    right: var(--cobweb-right, -8px);
+    top: var(--cobweb-top, -8px);
+    background-image: url('/assets/images/cobweb.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.3;
+    @apply transition-opacity duration-150;
+  }
+
+  .post-card-ancient:hover::before {
+    opacity: 0.5;
+  }
+
   /* Game card */
   .game-card {
     @apply block p-6 rounded-xl border border-surface-200 bg-white;
