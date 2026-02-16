@@ -27,8 +27,24 @@ layout: default
 
         <div class="space-y-2">
           {%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+          {%- assign two_years_seconds = 63072000 -%}
+          {%- assign now_seconds = 'now' | date: '%s' | plus: 0 -%}
+          {%- assign ancient_threshold = now_seconds | minus: two_years_seconds -%}
           {%- for post in site.posts limit:15 -%}
-            <article class="post-card group">
+            {%- assign post_seconds = post.date | date: '%s' | plus: 0 -%}
+            {%- if post_seconds < ancient_threshold -%}
+              {%- assign ancient_class = " post-card-ancient" -%}
+              {%- comment -%} Generate pseudo-random position from post date {%- endcomment -%}
+              {%- assign day = post.date | date: '%d' | plus: 0 -%}
+              {%- assign month = post.date | date: '%m' | plus: 0 -%}
+              {%- assign cobweb_right = day | modulo: 20 | plus: -18 -%}
+              {%- assign cobweb_top = month | times: 2 | modulo: 16 | plus: -16 -%}
+              {%- assign ancient_style = " style=\"--cobweb-right: " | append: cobweb_right | append: "px; --cobweb-top: " | append: cobweb_top | append: "px;\"" -%}
+            {%- else -%}
+              {%- assign ancient_class = "" -%}
+              {%- assign ancient_style = "" -%}
+            {%- endif -%}
+            <article class="post-card{{ ancient_class }} group"{{ ancient_style }}>
               <a href="{{ post.url | relative_url }}" class="flex gap-4 hover:no-underline">
                 <!-- Cover image -->
                 {%- if post.image -%}
