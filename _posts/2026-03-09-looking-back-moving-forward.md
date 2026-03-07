@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Looking Back, Moving Forward: 2025 Recap"
-date:   2026-02-16 7:00:00 -0500
+date:   2026-03-09 10:00:00 -0500
 categories: blog
 tags: [reflection, ai, career, personal, elixir, agents, claude-code]
 author: Aaron
