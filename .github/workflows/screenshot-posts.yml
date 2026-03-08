@@ -43,9 +43,9 @@ jobs:
 
     - name: Build Jekyll site
       run: |
-        bundle exec jekyll build --destination _site
+        bundle exec jekyll build --destination _site --future
         # Start Jekyll server in background
-        bundle exec jekyll serve --detach --port 4000 --host 0.0.0.0
+        bundle exec jekyll serve --detach --port 4000 --host 0.0.0.0 --future
 
     - name: Wait for server
       run: |
