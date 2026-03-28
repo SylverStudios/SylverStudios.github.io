@@ -10,7 +10,7 @@ image: /assets/images/shelly-thumbnail.png
 ---
 
 <!-- EXCERPT: one to two sentence hook for the homepage list. Ends before the comment below. -->
-[![One Slack message, many ships]({{ "/assets/images/shelly-thumbnail.png" | relative_url }}){:class="excerpt-image" style="border-radius: 8px; width: 80px; height: auto;"}](#) We built remote coding agents where a Slack message turns into a PR. For us, this means 40% of PRs start there. {%- if page.tags -%}{% for tag in page.tags %}<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a> {% endfor %}{%- endif -%}
+[![One Slack message, many ships]({{ "/assets/images/shelly-thumbnail.png" | relative_url }}){:class="excerpt-image" style="border-radius: 8px; width: 80px; height: auto;"}](#) We built remote coding agents where a Slack message turns into a PR. Now, 40% of our PRs start there. {%- if page.tags -%}{% for tag in page.tags %}<a href="{{site.baseurl}}/archive.html#{{tag | slugize}}">#{{ tag }}</a> {% endfor %}{%- endif -%}
 <!-- Ends the excerpt text -->
 
 _note: I'm just saying Elixir for simplicity, but some of you may know when I'm actually meaning erlang :wink:_
