@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What Event Sourcing Changed in My Head"
-date: 2026-05-12 7:00:00 -0500
+date: 2026-05-12 6:00:00 -0500
 categories: blog
 tags: [elixir, phoenix, liveview, event-sourcing, elixirconf, architecture, commanded]
 youtubeId: HN7kaWljVik
