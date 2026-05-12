@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What Event Sourcing Changed in My Head"
-date: 2026-05-12 9:00:00 -0500
+date: 2026-05-12 7:00:00 -0500
 categories: blog
 tags: [elixir, phoenix, liveview, event-sourcing, elixirconf, architecture, commanded]
 youtubeId: HN7kaWljVik
@@ -30,3 +30,6 @@ I previously thought not all problems were a good fit for ES with the aim of fin
 
 If you're Event Sourcing curious, check out the talk. I talk about our experience from the first year, and the benefits to your business and eng team. Beware: it will persuade you to implement event sourcing at your job, or find some place that you can. Let me know what you think, if enough folks watch, then maybe YouTube will notice my copyright infringement and wouldn't that be a great sign of success 😉
 
+<div class="substack-button" style="text-align: center; margin: 2em 0;">
+  <a href="https://sylverstudios.substack.com/?r=1u7tgy&utm_campaign=pub-share-checklist" class="button" style="display: inline-block; padding: 0.8em 1.5em; background-color: #FF6719; color: white; text-decoration: none; border-radius: 4px; font-weight: 600; transition: background-color 0.2s;">Visit Substack to Subscribe</a>
+</div>
