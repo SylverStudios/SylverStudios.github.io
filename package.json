@@ -12,7 +12,7 @@
     "css:build": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/site.css --minify",
     "css:watch": "npx tailwindcss -i ./assets/css/main.css -o ./assets/css/site.css --watch",
     "jekyll:build": "bundle exec jekyll build",
-    "jekyll:serve": "bundle exec jekyll serve --drafts --livereload",
+    "jekyll:serve": "bundle exec jekyll serve --drafts --livereload --port ${JEKYLL_PORT:-4000}",
     "build": "npm run css:build && npm run jekyll:build",
     "dev": "npm run css:watch & npm run jekyll:serve"
   },
